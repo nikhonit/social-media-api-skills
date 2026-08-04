@@ -6,7 +6,14 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [instagram, reels, transcript, hashtags, social-media, api, mcp]
+tags:
+  - instagram
+  - reels
+  - transcript
+  - hashtags
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

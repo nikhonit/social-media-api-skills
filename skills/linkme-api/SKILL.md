@@ -6,7 +6,13 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [linkme, link-in-bio, creator, social-media, api, mcp]
+tags:
+  - linkme
+  - link-in-bio
+  - creator
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

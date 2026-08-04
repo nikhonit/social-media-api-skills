@@ -6,7 +6,13 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [pinterest, pins, visual-search, social-media, api, mcp]
+tags:
+  - pinterest
+  - pins
+  - visual-search
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

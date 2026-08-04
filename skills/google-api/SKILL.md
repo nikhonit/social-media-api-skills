@@ -6,7 +6,14 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [google, serp, business-profile, reviews, social-media, api, mcp]
+tags:
+  - google
+  - serp
+  - business-profile
+  - reviews
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

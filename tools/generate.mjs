@@ -320,7 +320,10 @@ function frontmatter({ name, description, tags }) {
     `author: ${REPO.author}`,
     `homepage: ${REPO.homepage}`,
     `repository: ${REPO.url}`,
-    `tags: [${tags.join(', ')}]`,
+    // Block list, matching the airbnb-full reference skill. Both styles are
+    // valid YAML, but this is the shape the skill ecosystem is known to parse.
+    'tags:',
+    ...tags.map((tag) => `  - ${tag}`),
     'metadata:',
     '  openclaw:',
     `    primaryEnv: ${REPO.envVar}`,

@@ -6,7 +6,15 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [linkedin, b2b, lead-generation, jobs, recruiting, social-media, api, mcp]
+tags:
+  - linkedin
+  - b2b
+  - lead-generation
+  - jobs
+  - recruiting
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

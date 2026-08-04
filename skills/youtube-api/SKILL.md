@@ -6,7 +6,15 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [youtube, transcript, captions, comments, video-data, social-media, api, mcp]
+tags:
+  - youtube
+  - transcript
+  - captions
+  - comments
+  - video-data
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

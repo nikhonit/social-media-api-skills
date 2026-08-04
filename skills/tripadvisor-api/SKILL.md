@@ -6,7 +6,14 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [tripadvisor, travel, reviews, hotels, social-media, api, mcp]
+tags:
+  - tripadvisor
+  - travel
+  - reviews
+  - hotels
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

@@ -6,7 +6,14 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [twitter, x, tweets, transcript, social-media, api, mcp]
+tags:
+  - twitter
+  - x
+  - tweets
+  - transcript
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY

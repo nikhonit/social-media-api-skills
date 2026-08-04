@@ -6,7 +6,13 @@ license: MIT-0
 author: ScraperSocial
 homepage: https://scrapersocial.com
 repository: https://github.com/nikhonit/social-media-api-skills
-tags: [polymarket, prediction-markets, odds, social-media, api, mcp]
+tags:
+  - polymarket
+  - prediction-markets
+  - odds
+  - social-media
+  - api
+  - mcp
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY
