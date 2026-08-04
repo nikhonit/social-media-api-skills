@@ -511,8 +511,11 @@ for (const key of platformKeys) {
     description: content.meta.description,
     endpoints: endpoints.length,
   });
+  // Link to SKILL.md, not the folder. GitHub's robots.txt disallows /*/tree/,
+  // so folder links point at pages no crawler may fetch; /blob/ file pages are
+  // crawlable. These internal links are what get each skill page indexed.
   readmeRows.push(
-    `| [${config.slug}](${dir}/) | ${config.name} | ${endpoints.length} | ${content.meta.tagline || content.meta.description} |`
+    `| [${config.slug}](${dir}/SKILL.md) | ${config.name} | ${endpoints.length} | ${content.meta.tagline || content.meta.description} |`
   );
 }
 
@@ -670,7 +673,7 @@ main(() => callEndpoint(path, params));
     endpoints: coverage.endpointCount,
   });
   readmeRows.push(
-    `| [${CATCH_ALL.slug}](${dir}/) | All platforms | ${coverage.endpointCount} | ${content.meta.tagline} |`
+    `| [${CATCH_ALL.slug}](${dir}/SKILL.md) | All platforms | ${coverage.endpointCount} | ${content.meta.tagline} |`
   );
 }
 

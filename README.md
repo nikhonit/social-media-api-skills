@@ -32,40 +32,40 @@ Swap `tiktok-api` for any skill name in the table below, or install the whole re
 <!-- generated:skills -->
 | Skill | Platform | Endpoints | What it covers |
 |---|---|---|---|
-| [amazon-api](skills/amazon-api/) | Amazon | 4 | Product detail, product search, reviews and seller listings. |
-| [app-store-api](skills/app-store-api/) | App Store | 6 | App metadata, reviews, keyword search and category charts. |
-| [bluesky-api](skills/bluesky-api/) | Bluesky | 3 | Public profiles, post timelines and keyword search. |
-| [facebook-api](skills/facebook-api/) | Facebook | 23 | Transcripts, page stats, comments, reels, ads, marketplace and events. |
-| [github-api](skills/github-api/) | GitHub | 11 | Repos, commits, contributors, issues, releases, profiles and trending. |
-| [google-api](skills/google-api/) | Google | 5 | Search results, Business Profile info, reviews and company ads. |
-| [google-finance-api](skills/google-finance-api/) | Google Finance | 3 | Quotes, historical price history and instrument search. |
-| [google-maps-api](skills/google-maps-api/) | Google Maps | 4 | Place details, place search, photos and contact discovery. |
-| [google-news-api](skills/google-news-api/) | Google News | 1 | Keyword search across news headlines and sources. |
-| [google-play-api](skills/google-play-api/) | Google Play | 4 | Android app metadata, reviews, keyword search and categories. |
-| [google-shopping-api](skills/google-shopping-api/) | Google Shopping | 1 | Product search across merchants, with pricing. |
-| [google-trends-api](skills/google-trends-api/) | Google Trends | 2 | Interest over time and rising related queries. |
-| [hacker-news-api](skills/hacker-news-api/) | Hacker News | 4 | Stories, comment threads, user profiles and keyword search. |
-| [instagram-api](skills/instagram-api/) | Instagram | 23 | Reel transcripts, profile and post stats, comments, hashtags and locations. |
-| [kwai-api](skills/kwai-api/) | Kwai | 3 | Creator profiles, post listings and single video lookups. |
-| [linkedin-api](skills/linkedin-api/) | LinkedIn | 38 | Profiles and 20 sub-resources, companies, job and people search, posts and ads. |
-| [linkme-api](skills/linkme-api/) | Linkme | 1 | Resolve a Linkme page to its links and profile details. |
-| [linktree-api](skills/linktree-api/) | Linktree | 1 | Resolve a Linktree page to its links and profile details. |
-| [naver-api](skills/naver-api/) | Naver | 4 | Blog, cafe, local and shopping search across Korea's main portal. |
-| [pinterest-api](skills/pinterest-api/) | Pinterest | 3 | Pin details, keyword search and per-URL save counts. |
-| [polymarket-api](skills/polymarket-api/) | Polymarket | 1 | Prediction market listings and current odds. |
-| [reddit-api](skills/reddit-api/) | Reddit | 8 | Posts, comment threads, subreddit listings, user profiles and search. |
-| [snapchat-api](skills/snapchat-api/) | Snapchat | 1 | Public creator profile lookups. |
-| [spotify-api](skills/spotify-api/) | Spotify | 6 | Tracks, albums, artists, top tracks, playlists and search. |
-| [threads-api](skills/threads-api/) | Threads | 5 | Profiles, post timelines, post stats and keyword search. |
-| [tiktok-api](skills/tiktok-api/) | TikTok | 16 | Transcripts, summaries, channel stats, comments, hashtag and song search. |
-| [tiktok-shop-api](skills/tiktok-shop-api/) | TikTok Shop | 5 | Product detail, reviews, shop catalogues and creator showcases. |
-| [tripadvisor-api](skills/tripadvisor-api/) | Tripadvisor | 2 | Hotel, restaurant and attraction search with review listings. |
-| [trustpilot-api](skills/trustpilot-api/) | Trustpilot | 1 | Company review listings. |
-| [truth-social-api](skills/truth-social-api/) | Truth Social | 2 | Public profiles and user post timelines. |
-| [twitch-api](skills/twitch-api/) | Twitch | 3 | Streamer profiles, clips and video listings. |
-| [twitter-api](skills/twitter-api/) | X (Twitter) | 7 | Transcripts, AI summaries, post stats, profiles, tweets and search. |
-| [youtube-api](skills/youtube-api/) | YouTube | 26 | Transcripts, captions, video and channel stats, comments, Shorts and search. |
-| [social-media-api](skills/social-media-api/) | All platforms | 227 | Discover and call any endpoint across every platform. |
+| [amazon-api](skills/amazon-api/SKILL.md) | Amazon | 4 | Product detail, product search, reviews and seller listings. |
+| [app-store-api](skills/app-store-api/SKILL.md) | App Store | 6 | App metadata, reviews, keyword search and category charts. |
+| [bluesky-api](skills/bluesky-api/SKILL.md) | Bluesky | 3 | Public profiles, post timelines and keyword search. |
+| [facebook-api](skills/facebook-api/SKILL.md) | Facebook | 23 | Transcripts, page stats, comments, reels, ads, marketplace and events. |
+| [github-api](skills/github-api/SKILL.md) | GitHub | 11 | Repos, commits, contributors, issues, releases, profiles and trending. |
+| [google-api](skills/google-api/SKILL.md) | Google | 5 | Search results, Business Profile info, reviews and company ads. |
+| [google-finance-api](skills/google-finance-api/SKILL.md) | Google Finance | 3 | Quotes, historical price history and instrument search. |
+| [google-maps-api](skills/google-maps-api/SKILL.md) | Google Maps | 4 | Place details, place search, photos and contact discovery. |
+| [google-news-api](skills/google-news-api/SKILL.md) | Google News | 1 | Keyword search across news headlines and sources. |
+| [google-play-api](skills/google-play-api/SKILL.md) | Google Play | 4 | Android app metadata, reviews, keyword search and categories. |
+| [google-shopping-api](skills/google-shopping-api/SKILL.md) | Google Shopping | 1 | Product search across merchants, with pricing. |
+| [google-trends-api](skills/google-trends-api/SKILL.md) | Google Trends | 2 | Interest over time and rising related queries. |
+| [hacker-news-api](skills/hacker-news-api/SKILL.md) | Hacker News | 4 | Stories, comment threads, user profiles and keyword search. |
+| [instagram-api](skills/instagram-api/SKILL.md) | Instagram | 23 | Reel transcripts, profile and post stats, comments, hashtags and locations. |
+| [kwai-api](skills/kwai-api/SKILL.md) | Kwai | 3 | Creator profiles, post listings and single video lookups. |
+| [linkedin-api](skills/linkedin-api/SKILL.md) | LinkedIn | 38 | Profiles and 20 sub-resources, companies, job and people search, posts and ads. |
+| [linkme-api](skills/linkme-api/SKILL.md) | Linkme | 1 | Resolve a Linkme page to its links and profile details. |
+| [linktree-api](skills/linktree-api/SKILL.md) | Linktree | 1 | Resolve a Linktree page to its links and profile details. |
+| [naver-api](skills/naver-api/SKILL.md) | Naver | 4 | Blog, cafe, local and shopping search across Korea's main portal. |
+| [pinterest-api](skills/pinterest-api/SKILL.md) | Pinterest | 3 | Pin details, keyword search and per-URL save counts. |
+| [polymarket-api](skills/polymarket-api/SKILL.md) | Polymarket | 1 | Prediction market listings and current odds. |
+| [reddit-api](skills/reddit-api/SKILL.md) | Reddit | 8 | Posts, comment threads, subreddit listings, user profiles and search. |
+| [snapchat-api](skills/snapchat-api/SKILL.md) | Snapchat | 1 | Public creator profile lookups. |
+| [spotify-api](skills/spotify-api/SKILL.md) | Spotify | 6 | Tracks, albums, artists, top tracks, playlists and search. |
+| [threads-api](skills/threads-api/SKILL.md) | Threads | 5 | Profiles, post timelines, post stats and keyword search. |
+| [tiktok-api](skills/tiktok-api/SKILL.md) | TikTok | 16 | Transcripts, summaries, channel stats, comments, hashtag and song search. |
+| [tiktok-shop-api](skills/tiktok-shop-api/SKILL.md) | TikTok Shop | 5 | Product detail, reviews, shop catalogues and creator showcases. |
+| [tripadvisor-api](skills/tripadvisor-api/SKILL.md) | Tripadvisor | 2 | Hotel, restaurant and attraction search with review listings. |
+| [trustpilot-api](skills/trustpilot-api/SKILL.md) | Trustpilot | 1 | Company review listings. |
+| [truth-social-api](skills/truth-social-api/SKILL.md) | Truth Social | 2 | Public profiles and user post timelines. |
+| [twitch-api](skills/twitch-api/SKILL.md) | Twitch | 3 | Streamer profiles, clips and video listings. |
+| [twitter-api](skills/twitter-api/SKILL.md) | X (Twitter) | 7 | Transcripts, AI summaries, post stats, profiles, tweets and search. |
+| [youtube-api](skills/youtube-api/SKILL.md) | YouTube | 26 | Transcripts, captions, video and channel stats, comments, Shorts and search. |
+| [social-media-api](skills/social-media-api/SKILL.md) | All platforms | 227 | Discover and call any endpoint across every platform. |
 <!-- /generated:skills -->
 
 ## Quickstart
