@@ -14,18 +14,31 @@ Free to start: signing up gives you 100 credits, no card required. Plain Node.js
 
 ## Install
 
+Most people want the catch-all skill — one skill that reaches all 33 platforms:
+
 ```bash
 # OpenClaw (via ClawHub)
-npx clawhub@latest install tiktok-api
+npx clawhub@latest install social-media-api
 
 # Hermes Agent
-hermes skills install skills-sh/nikhonit/social-media-api-skills/skills/tiktok-api
+hermes skills install skills-sh/nikhonit/social-media-api-skills/skills/social-media-api
 
-# Generic agent skills (Claude Code, Cursor, Cline)
+# Generic agent skills (Claude Code, Cursor, Cline) — installs every skill in the repo
 npx skills add nikhonit/social-media-api-skills
 ```
 
-Swap `tiktok-api` for any skill name in the table below, or install the whole repo.
+Or install one platform, when you already know which you need:
+
+```bash
+npx clawhub@latest install tiktok-api
+npx clawhub@latest install instagram-api
+npx clawhub@latest install linkedin-api
+npx clawhub@latest install youtube-api
+```
+
+Any skill name from the table below works. The per-platform skills carry argument
+validation, per-endpoint costs and guidance on when *not* to spend credits; the
+catch-all trades that for reach.
 
 ## Skills in this repo
 
