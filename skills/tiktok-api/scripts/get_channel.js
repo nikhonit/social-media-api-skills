@@ -15,10 +15,10 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "reposts": { path: "/v1/tiktok/channel-reposts", input: "handle", list: true },
-  "stats": { path: "/v1/tiktok/channel-stats", input: "handle", list: false },
-  "top-videos": { path: "/v1/tiktok/channel-top-videos", input: "handle", list: true },
-  "videos": { path: "/v1/tiktok/channel-videos", input: "handle", list: true },
+  "reposts": { path: "/v1/tiktok/channel-reposts", input: "handle" },
+  "stats": { path: "/v1/tiktok/channel-stats", input: "handle" },
+  "top-videos": { path: "/v1/tiktok/channel-top-videos", input: "handle" },
+  "videos": { path: "/v1/tiktok/channel-videos", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

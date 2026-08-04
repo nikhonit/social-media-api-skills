@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "org-repos": { path: "/v1/github/org-repos", input: "handle", list: true },
-  "user-repos": { path: "/v1/github/user-repos", input: "handle", list: true },
+  "org-repos": { path: "/v1/github/org-repos", input: "handle" },
+  "user-repos": { path: "/v1/github/user-repos", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

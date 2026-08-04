@@ -1,6 +1,7 @@
 ---
 description: Amazon data toolkit via ScraperSocial — product detail, product search, customer reviews and seller listings as clean JSON.
 tagline: Product detail, product search, reviews and seller listings.
+example: product_search.js "wireless earbuds"
 ---
 
 ## lede

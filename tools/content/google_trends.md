@@ -1,6 +1,7 @@
 ---
 description: Google Trends data toolkit via ScraperSocial — interest-over-time exploration and rising related queries.
 tagline: Interest over time and rising related queries.
+example: get_explore.js "electric vehicles"
 ---
 
 ## lede

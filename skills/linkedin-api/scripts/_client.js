@@ -25,6 +25,13 @@ const MAX_SYNC_LIMIT = 50;
 const RETRY_STATUSES = new Set([429, 500, 502, 503, 504]);
 const MAX_ATTEMPTS = 4;
 
+/**
+ * Without this a stalled connection hangs forever, which is much worse when an
+ * agent is running these as subprocesses. Transcript and summary endpoints do
+ * real work, so the default is generous.
+ */
+const REQUEST_TIMEOUT_MS = Number(process.env.SCRAPERSOCIAL_TIMEOUT_MS) || 60_000;
+
 /** Print a machine-readable error and exit non-zero. */
 function fail(error, detail, requestId) {
   const payload = { error };
@@ -89,10 +96,19 @@ async function callEndpoint(path, params = {}) {
           accept: 'application/json',
           'user-agent': USER_AGENT,
         },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
       });
     } catch (cause) {
-      // Network-level failure: retry, then give up with the real reason.
-      if (attempt === MAX_ATTEMPTS) fail('network_error', String(cause && cause.message ? cause.message : cause));
+      // Network failure or timeout: retry, then give up with the real reason.
+      const timedOut = cause && (cause.name === 'TimeoutError' || cause.name === 'AbortError');
+      if (attempt === MAX_ATTEMPTS) {
+        fail(
+          timedOut ? 'timeout' : 'network_error',
+          timedOut
+            ? `No response after ${REQUEST_TIMEOUT_MS}ms. Raise SCRAPERSOCIAL_TIMEOUT_MS if the endpoint is a slow one.`
+            : String(cause && cause.message ? cause.message : cause)
+        );
+      }
       await sleep(2 ** attempt * 250);
       continue;
     }
@@ -152,14 +168,27 @@ function parseFlags(argv) {
   return { _: positional, flags };
 }
 
+/**
+ * Boolean flags must honour an explicit value: `--fresh false` means false.
+ * Treating any present flag as true silently inverts the user's intent.
+ */
+function boolFlag(value) {
+  if (value === undefined || value === null) return false;
+  if (value === true) return true;
+  const normalised = String(value).trim().toLowerCase();
+  return !(normalised === 'false' || normalised === '0' || normalised === 'no' || normalised === '');
+}
+
 /** Optional parameters every endpoint accepts. */
 function commonParams(flags) {
+  // A bare `--limit` with no value parses as boolean true, which is not a value.
+  const valued = (v) => (v === true ? undefined : v);
   return {
-    limit: flags.limit,
-    cursor: flags.cursor,
-    fields: flags.fields,
-    format: flags.format,
-    fresh: flags.fresh ? 'true' : undefined,
+    limit: valued(flags.limit),
+    cursor: valued(flags.cursor),
+    fields: valued(flags.fields),
+    format: valued(flags.format),
+    fresh: boolFlag(flags.fresh) ? 'true' : undefined,
   };
 }
 
@@ -183,6 +212,8 @@ module.exports = {
   API_BASE,
   ENV_VAR,
   MAX_SYNC_LIMIT,
+  REQUEST_TIMEOUT_MS,
+  boolFlag,
   callEndpoint,
   commonParams,
   fail,

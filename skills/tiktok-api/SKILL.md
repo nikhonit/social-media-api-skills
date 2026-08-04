@@ -82,7 +82,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/tiktok-api/scripts/get_comments.js https://example.com/some-public-url
+node skills/tiktok-api/scripts/search.js "sourdough starter"
 ```
 
 Every response uses the same envelope:

@@ -16,11 +16,11 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "about": { path: "/v1/instagram/profile-about", input: "handle", list: false },
-  "full": { path: "/v1/instagram/profile-full", input: "handle", list: false },
-  "search": { path: "/v1/instagram/profile-search", input: "query", list: true },
-  "similar": { path: "/v1/instagram/similar", input: "handle", list: false },
-  "tagged": { path: "/v1/instagram/tagged", input: "handle", list: true },
+  "about": { path: "/v1/instagram/profile-about", input: "handle" },
+  "full": { path: "/v1/instagram/profile-full", input: "handle" },
+  "search": { path: "/v1/instagram/profile-search", input: "query" },
+  "similar": { path: "/v1/instagram/similar", input: "handle" },
+  "tagged": { path: "/v1/instagram/tagged", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

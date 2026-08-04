@@ -69,7 +69,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/reddit-api/scripts/get_post_comments.js https://example.com/some-public-url
+node skills/reddit-api/scripts/search.js "mechanical keyboards"
 ```
 
 Every response uses the same envelope:

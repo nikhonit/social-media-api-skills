@@ -63,7 +63,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/threads-api/scripts/get_posts.js nasa
+node skills/threads-api/scripts/search.js "design systems"
 ```
 
 Every response uses the same envelope:

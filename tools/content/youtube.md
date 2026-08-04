@@ -1,6 +1,7 @@
 ---
 description: YouTube data toolkit via ScraperSocial — transcripts, captions and subtitles, video and channel stats, comments and replies, Shorts, search, trending and media URLs.
 tagline: Transcripts, captions, video and channel stats, comments, Shorts and search.
+example: search.js "transformer architecture explained"
 ---
 
 ## lede

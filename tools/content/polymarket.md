@@ -1,6 +1,7 @@
 ---
 description: Polymarket data toolkit via ScraperSocial — prediction market listings and current odds as clean JSON.
 tagline: Prediction market listings and current odds.
+example: get_markets.js "election"
 ---
 
 ## lede

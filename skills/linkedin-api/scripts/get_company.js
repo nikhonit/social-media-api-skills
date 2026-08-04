@@ -18,13 +18,13 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/linkedin/company", input: "url|handle", list: false },
-  "funding": { path: "/v1/linkedin/company-funding", input: "url|handle", list: false },
-  "insights": { path: "/v1/linkedin/company-insights", input: "url|handle", list: false },
-  "jobs": { path: "/v1/linkedin/company-jobs", input: "url|handle", list: true },
-  "people": { path: "/v1/linkedin/company-people", input: "url|handle", list: true },
-  "posts": { path: "/v1/linkedin/company-posts", input: "url|handle", list: true },
-  "search": { path: "/v1/linkedin/company-search", input: "query", list: true },
+  "default": { path: "/v1/linkedin/company", input: "url|handle" },
+  "funding": { path: "/v1/linkedin/company-funding", input: "url|handle" },
+  "insights": { path: "/v1/linkedin/company-insights", input: "url|handle" },
+  "jobs": { path: "/v1/linkedin/company-jobs", input: "url|handle" },
+  "people": { path: "/v1/linkedin/company-people", input: "url|handle" },
+  "posts": { path: "/v1/linkedin/company-posts", input: "url|handle" },
+  "search": { path: "/v1/linkedin/company-search", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

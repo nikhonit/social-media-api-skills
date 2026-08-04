@@ -60,7 +60,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/trustpilot-api/scripts/get_reviews.js nasa
+node skills/trustpilot-api/scripts/get_reviews.js <company-domain>
 ```
 
 Every response uses the same envelope:

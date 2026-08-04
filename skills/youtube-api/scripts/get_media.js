@@ -14,9 +14,9 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "thumbnails": { path: "/v1/youtube/thumbnails", input: "url", list: false },
-  "video-audio": { path: "/v1/youtube/video-audio", input: "url", list: false },
-  "video-files": { path: "/v1/youtube/video-files", input: "url", list: false },
+  "thumbnails": { path: "/v1/youtube/thumbnails", input: "url" },
+  "video-audio": { path: "/v1/youtube/video-audio", input: "url" },
+  "video-files": { path: "/v1/youtube/video-files", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

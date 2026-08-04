@@ -1,6 +1,7 @@
 ---
 description: Facebook data toolkit via ScraperSocial — video transcripts, AI summaries, post and page stats, comments, reels, ads, marketplace, events, groups and reviews.
 tagline: Transcripts, page stats, comments, reels, ads, marketplace and events.
+example: get_page.js "specialty coffee roasters" --section=search
 ---
 
 ## lede

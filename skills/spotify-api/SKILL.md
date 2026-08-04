@@ -66,7 +66,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/spotify-api/scripts/get_album.js nasa
+node skills/spotify-api/scripts/search.js "Radiohead"
 ```
 
 Every response uses the same envelope:

@@ -93,7 +93,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/youtube-api/scripts/get_channel.js nasa --section=lives
+node skills/youtube-api/scripts/search.js "transformer architecture explained"
 ```
 
 Every response uses the same envelope:

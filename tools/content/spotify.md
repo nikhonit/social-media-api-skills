@@ -1,6 +1,7 @@
 ---
 description: Spotify data toolkit via ScraperSocial — tracks, albums, artists, top tracks, playlists and catalogue search.
 tagline: Tracks, albums, artists, top tracks, playlists and search.
+example: search.js "Radiohead"
 ---
 
 ## lede

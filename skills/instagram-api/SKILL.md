@@ -88,7 +88,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/instagram-api/scripts/get_stats.js https://example.com/some-public-url
+node skills/instagram-api/scripts/get_hashtag.js latteart --section=posts
 ```
 
 Every response uses the same envelope:

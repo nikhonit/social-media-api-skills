@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/tiktok/song", input: "url", list: false },
-  "videos": { path: "/v1/tiktok/song-videos", input: "url", list: true },
+  "default": { path: "/v1/tiktok/song", input: "url" },
+  "videos": { path: "/v1/tiktok/song-videos", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

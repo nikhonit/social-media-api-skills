@@ -1,6 +1,7 @@
 ---
 description: GitHub data toolkit via ScraperSocial — repositories, commits, contributors, issues, releases, languages, user profiles, repo search and trending.
 tagline: Repos, commits, contributors, issues, releases, profiles and trending.
+example: get_profile.js torvalds
 ---
 
 ## lede

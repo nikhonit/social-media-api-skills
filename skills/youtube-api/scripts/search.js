@@ -16,11 +16,11 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/youtube/search", input: "query", list: true },
-  "hashtag-search": { path: "/v1/youtube/hashtag-search", input: "query", list: true },
-  "recent": { path: "/v1/youtube/search-recent", input: "query", list: true },
-  "streams-search": { path: "/v1/youtube/streams-search", input: "query", list: true },
-  "suggestions": { path: "/v1/youtube/search-suggestions", input: "query", list: true },
+  "default": { path: "/v1/youtube/search", input: "query" },
+  "hashtag-search": { path: "/v1/youtube/hashtag-search", input: "query" },
+  "recent": { path: "/v1/youtube/search-recent", input: "query" },
+  "streams-search": { path: "/v1/youtube/streams-search", input: "query" },
+  "suggestions": { path: "/v1/youtube/search-suggestions", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

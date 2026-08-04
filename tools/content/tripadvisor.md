@@ -1,6 +1,7 @@
 ---
 description: Tripadvisor data toolkit via ScraperSocial — property and attraction search plus full review listings.
 tagline: Hotel, restaurant and attraction search with review listings.
+example: search.js "hotels in Lisbon"
 ---
 
 ## lede

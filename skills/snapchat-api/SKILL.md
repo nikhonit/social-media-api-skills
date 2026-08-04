@@ -58,7 +58,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/snapchat-api/scripts/get_profile.js nasa
+node skills/snapchat-api/scripts/get_profile.js <snapchat-handle>
 ```
 
 Every response uses the same envelope:

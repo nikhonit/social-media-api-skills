@@ -61,7 +61,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/kwai-api/scripts/get_post.js https://example.com/some-public-url
+node skills/kwai-api/scripts/get_profile.js <kwai-handle>
 ```
 
 Every response uses the same envelope:

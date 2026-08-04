@@ -14,9 +14,9 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "ads": { path: "/v1/facebook/page-ads", input: "url|handle", list: true },
-  "events": { path: "/v1/facebook/page-events", input: "url|handle", list: true },
-  "search": { path: "/v1/facebook/page-search", input: "query", list: true },
+  "ads": { path: "/v1/facebook/page-ads", input: "url|handle" },
+  "events": { path: "/v1/facebook/page-events", input: "url|handle" },
+  "search": { path: "/v1/facebook/page-search", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

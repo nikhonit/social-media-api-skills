@@ -1,6 +1,7 @@
 ---
 description: TikTok Shop data toolkit via ScraperSocial — product detail, product reviews, shop catalogues, creator showcases and product search.
 tagline: Product detail, reviews, shop catalogues and creator showcases.
+example: search.js "phone case"
 ---
 
 ## lede

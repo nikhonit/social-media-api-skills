@@ -1,6 +1,7 @@
 ---
 description: Reddit data toolkit via ScraperSocial — posts, full comment threads, subreddit listings and details, user profiles and keyword search.
 tagline: Posts, comment threads, subreddit listings, user profiles and search.
+example: search.js "mechanical keyboards"
 ---
 
 ## lede

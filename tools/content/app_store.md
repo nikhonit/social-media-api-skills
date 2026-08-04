@@ -1,6 +1,7 @@
 ---
 description: Apple App Store data toolkit via ScraperSocial — app metadata, user reviews, keyword search, category charts and storefront locations.
 tagline: App metadata, reviews, keyword search and category charts.
+example: app_search.js "meditation timer"
 ---
 
 ## lede

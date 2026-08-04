@@ -63,7 +63,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/twitch-api/scripts/get_clip.js nasa
+node skills/twitch-api/scripts/get_profile.js <streamer-handle>
 ```
 
 Every response uses the same envelope:

@@ -1,6 +1,7 @@
 ---
 description: Pinterest data toolkit via ScraperSocial — pin details, keyword search and save counts for any URL.
 tagline: Pin details, keyword search and per-URL save counts.
+example: search.js "small kitchen renovation"
 ---
 
 ## lede

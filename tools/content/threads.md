@@ -1,6 +1,7 @@
 ---
 description: Threads data toolkit via ScraperSocial — profiles, user post timelines, post stats, keyword search and user search.
 tagline: Profiles, post timelines, post stats and keyword search.
+example: search.js "design systems"
 ---
 
 ## lede

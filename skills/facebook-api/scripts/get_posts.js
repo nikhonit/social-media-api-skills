@@ -15,10 +15,10 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "channel-posts": { path: "/v1/facebook/channel-posts", input: "url|handle", list: true },
-  "group-posts": { path: "/v1/facebook/group-posts", input: "url|handle", list: true },
-  "photos": { path: "/v1/facebook/photos", input: "url|handle", list: true },
-  "reels": { path: "/v1/facebook/reels", input: "url|handle", list: true },
+  "channel-posts": { path: "/v1/facebook/channel-posts", input: "url|handle" },
+  "group-posts": { path: "/v1/facebook/group-posts", input: "url|handle" },
+  "photos": { path: "/v1/facebook/photos", input: "url|handle" },
+  "reels": { path: "/v1/facebook/reels", input: "url|handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

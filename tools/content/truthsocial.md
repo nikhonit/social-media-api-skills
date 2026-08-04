@@ -1,6 +1,7 @@
 ---
 description: Truth Social data toolkit via ScraperSocial — public profiles and user post timelines as clean JSON.
 tagline: Public profiles and user post timelines.
+example: get_profile.js <truthsocial-handle>
 ---
 
 ## lede

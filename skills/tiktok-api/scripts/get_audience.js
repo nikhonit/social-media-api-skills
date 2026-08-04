@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "followers": { path: "/v1/tiktok/followers", input: "handle", list: true },
-  "following": { path: "/v1/tiktok/following", input: "handle", list: true },
+  "followers": { path: "/v1/tiktok/followers", input: "handle" },
+  "following": { path: "/v1/tiktok/following", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

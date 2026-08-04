@@ -62,7 +62,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/tripadvisor-api/scripts/get_reviews.js https://example.com/some-public-url
+node skills/tripadvisor-api/scripts/search.js "hotels in Lisbon"
 ```
 
 Every response uses the same envelope:

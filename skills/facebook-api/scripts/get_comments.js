@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/facebook/comments", input: "url", list: true },
-  "comment-replies": { path: "/v1/facebook/comment-replies", input: "url", list: true },
+  "default": { path: "/v1/facebook/comments", input: "url" },
+  "comment-replies": { path: "/v1/facebook/comment-replies", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

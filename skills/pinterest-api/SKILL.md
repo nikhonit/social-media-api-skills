@@ -61,7 +61,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/pinterest-api/scripts/get_url_stats.js https://example.com/some-public-url
+node skills/pinterest-api/scripts/search.js "small kitchen renovation"
 ```
 
 Every response uses the same envelope:

@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/twitter/tweets", input: "handle", list: true },
+  "default": { path: "/v1/twitter/tweets", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

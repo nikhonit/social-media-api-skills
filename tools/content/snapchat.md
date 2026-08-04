@@ -1,6 +1,7 @@
 ---
 description: Snapchat data toolkit via ScraperSocial — public creator profile lookups as clean JSON.
 tagline: Public creator profile lookups.
+example: get_profile.js <snapchat-handle>
 ---
 
 ## lede

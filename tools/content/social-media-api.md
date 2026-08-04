@@ -1,6 +1,7 @@
 ---
 description: One social media API skill for all 33 platforms — discover every available endpoint and call any of them by path, without installing a per-platform skill.
 tagline: Discover and call any endpoint across every platform.
+example: list_endpoints.js --search transcript
 ---
 
 ## lede

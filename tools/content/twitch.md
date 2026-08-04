@@ -1,6 +1,7 @@
 ---
 description: Twitch data toolkit via ScraperSocial — streamer profiles, clips and user video listings as clean JSON.
 tagline: Streamer profiles, clips and video listings.
+example: get_profile.js <streamer-handle>
 ---
 
 ## lede

@@ -61,7 +61,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/bluesky-api/scripts/get_profile.js nasa
+node skills/bluesky-api/scripts/get_profile.js bsky.app
 ```
 
 Every response uses the same envelope:

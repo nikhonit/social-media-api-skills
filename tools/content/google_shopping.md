@@ -1,6 +1,7 @@
 ---
 description: Google Shopping data toolkit via ScraperSocial — product search across merchants with pricing as clean JSON.
 tagline: Product search across merchants, with pricing.
+example: product_search.js "mechanical keyboard"
 ---
 
 ## lede

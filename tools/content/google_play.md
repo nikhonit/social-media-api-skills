@@ -1,6 +1,7 @@
 ---
 description: Google Play data toolkit via ScraperSocial — Android app metadata, user reviews, keyword search and store categories.
 tagline: Android app metadata, reviews, keyword search and categories.
+example: app_search.js "habit tracker"
 ---
 
 ## lede

@@ -105,7 +105,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/linkedin-api/scripts/ads_search.js "coffee shops"
+node skills/linkedin-api/scripts/people_search.js "product manager fintech"
 ```
 
 Every response uses the same envelope:
@@ -169,7 +169,7 @@ Costs shown per item for paginated endpoints, per call otherwise. Failed calls a
 
 ### How do I get someone's contact details?
 
-`get_profile.js --section=contact`, 25 credits. Passing `--include_email` prices the email separately. Only do this with a lawful basis for processing that person's data.
+`get_profile.js --section=contact` returns the contact record for 25 credits. Separately, the default `get_profile.js` accepts `--include_email`, which adds the email to the base profile and reprices that call from 10 credits to 25. `--include_email` applies only to the default section; it is not accepted anywhere else. Only pull either with a lawful basis for processing that person's data.
 
 ### Can I search LinkedIn for people, companies or jobs?
 

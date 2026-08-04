@@ -17,12 +17,12 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "lives": { path: "/v1/youtube/channel-lives", input: "handle", list: true },
-  "search": { path: "/v1/youtube/channel-search", input: "query", list: true },
-  "shorts": { path: "/v1/youtube/channel-shorts", input: "handle", list: true },
-  "stats": { path: "/v1/youtube/channel-stats", input: "handle", list: false },
-  "top-videos": { path: "/v1/youtube/channel-top-videos", input: "handle", list: true },
-  "videos": { path: "/v1/youtube/channel-videos", input: "handle", list: true },
+  "lives": { path: "/v1/youtube/channel-lives", input: "handle" },
+  "search": { path: "/v1/youtube/channel-search", input: "query" },
+  "shorts": { path: "/v1/youtube/channel-shorts", input: "handle" },
+  "stats": { path: "/v1/youtube/channel-stats", input: "handle" },
+  "top-videos": { path: "/v1/youtube/channel-top-videos", input: "handle" },
+  "videos": { path: "/v1/youtube/channel-videos", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

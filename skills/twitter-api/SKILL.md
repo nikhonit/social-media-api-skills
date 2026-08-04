@@ -71,7 +71,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/twitter-api/scripts/get_list_tweets.js https://example.com/some-public-url
+node skills/twitter-api/scripts/search.js "llm benchmarks"
 ```
 
 Every response uses the same envelope:

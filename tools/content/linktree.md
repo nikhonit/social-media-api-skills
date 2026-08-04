@@ -1,6 +1,7 @@
 ---
 description: Linktree data toolkit via ScraperSocial — resolve a Linktree page to the links and profile details it publishes.
 tagline: Resolve a Linktree page to its links and profile details.
+example: get_page.js <linktree-handle>
 ---
 
 ## lede

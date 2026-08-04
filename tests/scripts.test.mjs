@@ -241,6 +241,88 @@ describe('error handling', () => {
   });
 });
 
+describe('boolean flags', () => {
+  test('--fresh sends fresh=true', async () => {
+    handler = ok;
+    await run('skills/github-api/scripts/get_profile.js', ['torvalds', '--fresh']);
+    assert.match(received[0].url, /fresh=true/);
+  });
+
+  test('--fresh false does NOT send fresh', async () => {
+    handler = ok;
+    await run('skills/github-api/scripts/get_profile.js', ['torvalds', '--fresh', 'false']);
+    assert.doesNotMatch(received[0].url, /fresh/, 'an explicit false must not become true');
+  });
+
+  test('--fresh=false does NOT send fresh', async () => {
+    handler = ok;
+    await run('skills/github-api/scripts/get_profile.js', ['torvalds', '--fresh=false']);
+    assert.doesNotMatch(received[0].url, /fresh/);
+  });
+
+  test('a bare --limit is not sent as limit=true', async () => {
+    handler = ok;
+    await run('skills/reddit-api/scripts/get_subreddit.js', ['programming', '--limit']);
+    assert.doesNotMatch(received[0].url, /limit=true/);
+  });
+});
+
+describe('include_email', () => {
+  test('accepted on the LinkedIn profile default section', async () => {
+    handler = ok;
+    const { code } = await run('skills/linkedin-api/scripts/get_profile.js', [
+      'someone',
+      '--include_email',
+    ]);
+    assert.equal(code, 0);
+    assert.match(received[0].url, /include_email=true/);
+  });
+
+  test('rejected on a section that does not support it', async () => {
+    handler = ok;
+    const { code, stderr } = await run('skills/linkedin-api/scripts/get_profile.js', [
+      'someone',
+      '--section=contact',
+      '--include_email',
+    ]);
+    assert.equal(code, 2, 'must not silently drop an unsupported parameter');
+    assert.match(stderr, /not supported by this section/);
+    assert.equal(received.length, 0);
+  });
+});
+
+describe('timeouts', () => {
+  test('a stalled response fails with a timeout rather than hanging', async () => {
+    handler = (req, res) => {
+      // Never respond within the test's timeout window.
+      setTimeout(() => { try { res.end('{}'); } catch {} }, 5000).unref();
+    };
+    const { code, stderr } = await run(
+      'skills/github-api/scripts/get_profile.js',
+      ['torvalds'],
+      { SCRAPERSOCIAL_TIMEOUT_MS: '150' }
+    );
+    assert.equal(code, 1);
+    assert.match(stderr, /timeout/);
+  });
+});
+
+describe('documentation', () => {
+  test('every SKILL.md example runs a script that exists', async () => {
+    const { readdirSync, readFileSync, existsSync } = await import('node:fs');
+    const problems = [];
+    for (const skill of readdirSync(join(ROOT, 'skills'))) {
+      const md = readFileSync(join(ROOT, 'skills', skill, 'SKILL.md'), 'utf8');
+      for (const [, cmd] of md.matchAll(/^node (skills\/[^\s]+\.js)/gm)) {
+        if (!existsSync(join(ROOT, cmd))) problems.push(`${skill}: ${cmd}`);
+      }
+      // A fake-looking URL in a copy-paste example is worse than a placeholder.
+      if (/https?:\/\/example\.(com|org)/.test(md)) problems.push(`${skill}: fabricated example URL`);
+    }
+    assert.deepEqual(problems, []);
+  });
+});
+
 describe('parseFlags', () => {
   const { parseFlags } = require(join(ROOT, 'skills/github-api/scripts/_client.js'));
 

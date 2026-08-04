@@ -89,7 +89,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/facebook-api/scripts/get_posts.js nasa --section=channel-posts
+node skills/facebook-api/scripts/get_page.js "specialty coffee roasters" --section=search
 ```
 
 Every response uses the same envelope:

@@ -65,7 +65,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/google-maps-api/scripts/get_photos.js https://example.com/some-public-url
+node skills/google-maps-api/scripts/search.js "coffee shops in Seattle"
 ```
 
 Every response uses the same envelope:

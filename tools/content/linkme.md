@@ -1,6 +1,7 @@
 ---
 description: Linkme data toolkit via ScraperSocial — resolve a Linkme page to the links and profile details it publishes.
 tagline: Resolve a Linkme page to its links and profile details.
+example: get_page.js <linkme-handle>
 ---
 
 ## lede

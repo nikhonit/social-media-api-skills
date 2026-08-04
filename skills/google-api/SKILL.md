@@ -67,7 +67,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/google-api/scripts/get_business_reviews.js nasa
+node skills/google-api/scripts/search.js "best running shoes 2026"
 ```
 
 Every response uses the same envelope:

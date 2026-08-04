@@ -14,9 +14,9 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/youtube/transcript", input: "url", list: false },
-  "captions": { path: "/v1/youtube/captions", input: "url", list: false },
-  "subtitles": { path: "/v1/youtube/subtitles", input: "url", list: false },
+  "default": { path: "/v1/youtube/transcript", input: "url" },
+  "captions": { path: "/v1/youtube/captions", input: "url" },
+  "subtitles": { path: "/v1/youtube/subtitles", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

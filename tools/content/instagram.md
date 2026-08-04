@@ -1,6 +1,7 @@
 ---
 description: Instagram data toolkit via ScraperSocial — reel transcripts, AI summaries, profile and post stats, comments, hashtag and location analytics, keyword search.
 tagline: Reel transcripts, profile and post stats, comments, hashtags and locations.
+example: get_hashtag.js latteart --section=posts
 ---
 
 ## lede

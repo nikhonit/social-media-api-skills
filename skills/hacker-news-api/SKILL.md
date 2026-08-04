@@ -63,7 +63,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/hacker-news-api/scripts/get_profile.js nasa
+node skills/hacker-news-api/scripts/get_profile.js pg
 ```
 
 Every response uses the same envelope:

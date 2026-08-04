@@ -72,7 +72,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/github-api/scripts/get_repos.js nasa --section=org-repos
+node skills/github-api/scripts/get_profile.js torvalds
 ```
 
 Every response uses the same envelope:

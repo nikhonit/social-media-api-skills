@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/spotify/artist", input: "handle", list: false },
+  "default": { path: "/v1/spotify/artist", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

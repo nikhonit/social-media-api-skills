@@ -1,6 +1,7 @@
 ---
 description: TikTok data toolkit via ScraperSocial — video transcripts, AI summaries, post and channel stats, comments, follower lists, song lookups, keyword and hashtag search.
 tagline: Transcripts, summaries, channel stats, comments, hashtag and song search.
+example: search.js "sourdough starter"
 ---
 
 ## lede

@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "item": { path: "/v1/facebook/marketplace-item", input: "url", list: false },
-  "search": { path: "/v1/facebook/marketplace-search", input: "query", list: true },
+  "item": { path: "/v1/facebook/marketplace-item", input: "url" },
+  "search": { path: "/v1/facebook/marketplace-search", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

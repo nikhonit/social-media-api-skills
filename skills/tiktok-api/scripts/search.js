@@ -15,10 +15,10 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/tiktok/search", input: "query", list: true },
-  "hashtag-search": { path: "/v1/tiktok/hashtag-search", input: "query", list: true },
-  "top-search": { path: "/v1/tiktok/top-search", input: "query", list: true },
-  "user-search": { path: "/v1/tiktok/user-search", input: "query", list: true },
+  "default": { path: "/v1/tiktok/search", input: "query" },
+  "hashtag-search": { path: "/v1/tiktok/hashtag-search", input: "query" },
+  "top-search": { path: "/v1/tiktok/top-search", input: "query" },
+  "user-search": { path: "/v1/tiktok/user-search", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

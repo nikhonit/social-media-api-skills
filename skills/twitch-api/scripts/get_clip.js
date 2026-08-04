@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/twitch/clip", input: "url|handle", list: false },
+  "default": { path: "/v1/twitch/clip", input: "url|handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

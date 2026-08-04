@@ -1,6 +1,7 @@
 ---
 description: Google Maps data toolkit via ScraperSocial — place details, place search, photos and business contact discovery.
 tagline: Place details, place search, photos and contact discovery.
+example: search.js "coffee shops in Seattle"
 ---
 
 ## lede

@@ -66,7 +66,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/amazon-api/scripts/get_product.js https://example.com/some-public-url
+node skills/amazon-api/scripts/product_search.js "wireless earbuds"
 ```
 
 Every response uses the same envelope:

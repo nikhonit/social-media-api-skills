@@ -1,6 +1,7 @@
 ---
 description: Kwai data toolkit via ScraperSocial — creator profiles, user post listings and single video lookups.
 tagline: Creator profiles, post listings and single video lookups.
+example: get_profile.js <kwai-handle>
 ---
 
 ## lede

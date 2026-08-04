@@ -59,7 +59,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/truth-social-api/scripts/get_profile.js nasa
+node skills/truth-social-api/scripts/get_profile.js <truthsocial-handle>
 ```
 
 Every response uses the same envelope:

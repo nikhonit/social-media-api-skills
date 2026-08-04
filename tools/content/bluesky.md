@@ -1,6 +1,7 @@
 ---
 description: Bluesky data toolkit via ScraperSocial — public profiles, user post timelines and keyword search across the network.
 tagline: Public profiles, post timelines and keyword search.
+example: get_profile.js bsky.app
 ---
 
 ## lede

@@ -1,6 +1,7 @@
 ---
 description: Google Finance data toolkit via ScraperSocial — live quotes, historical price candles and instrument search.
 tagline: Quotes, historical price history and instrument search.
+example: get_quote.js AAPL
 ---
 
 ## lede

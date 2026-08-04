@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/tiktok/transcript", input: "url", list: false },
-  "summary": { path: "/v1/tiktok/summary", input: "url", list: false },
+  "default": { path: "/v1/tiktok/transcript", input: "url" },
+  "summary": { path: "/v1/tiktok/summary", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

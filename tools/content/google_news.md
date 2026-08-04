@@ -1,6 +1,7 @@
 ---
 description: Google News data toolkit via ScraperSocial — keyword search across news headlines and sources as clean JSON.
 tagline: Keyword search across news headlines and sources.
+example: search.js "semiconductor export controls"
 ---
 
 ## lede

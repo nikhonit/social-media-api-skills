@@ -63,7 +63,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/naver-api/scripts/blog_search.js "coffee shops"
+node skills/naver-api/scripts/blog_search.js "서울 카페"
 ```
 
 Every response uses the same envelope:

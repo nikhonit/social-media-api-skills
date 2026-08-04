@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/threads/profile", input: "handle", list: false },
+  "default": { path: "/v1/threads/profile", input: "handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

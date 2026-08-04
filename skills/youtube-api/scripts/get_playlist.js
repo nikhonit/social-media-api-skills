@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "items": { path: "/v1/youtube/playlist-items", input: "url", list: true },
+  "items": { path: "/v1/youtube/playlist-items", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

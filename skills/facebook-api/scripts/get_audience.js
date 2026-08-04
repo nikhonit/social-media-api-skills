@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "followers": { path: "/v1/facebook/followers", input: "url|handle", list: true },
-  "following": { path: "/v1/facebook/following", input: "url|handle", list: true },
+  "followers": { path: "/v1/facebook/followers", input: "url|handle" },
+  "following": { path: "/v1/facebook/following", input: "url|handle" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

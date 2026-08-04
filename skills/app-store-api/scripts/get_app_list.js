@@ -12,7 +12,7 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/app_store/app-list", input: "query", list: true },
+  "default": { path: "/v1/app_store/app-list", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

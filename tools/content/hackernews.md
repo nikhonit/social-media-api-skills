@@ -1,6 +1,7 @@
 ---
 description: Hacker News data toolkit via ScraperSocial — stories, full comment threads, user profiles and keyword search.
 tagline: Stories, comment threads, user profiles and keyword search.
+example: get_profile.js pg
 ---
 
 ## lede

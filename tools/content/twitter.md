@@ -1,6 +1,7 @@
 ---
 description: X (Twitter) data toolkit via ScraperSocial — video transcripts, AI summaries, post stats, profiles, user tweets, list tweets and keyword search.
 tagline: Transcripts, AI summaries, post stats, profiles, tweets and search.
+example: search.js "llm benchmarks"
 ---
 
 ## lede

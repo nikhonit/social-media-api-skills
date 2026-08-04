@@ -1,6 +1,7 @@
 ---
 description: LinkedIn data toolkit via ScraperSocial — profiles and 20 sub-resources, company data, people/company/job search, posts, comments, reactions and ad search.
 tagline: Profiles and 20 sub-resources, companies, job and people search, posts and ads.
+example: people_search.js "product manager fintech"
 ---
 
 ## lede
@@ -33,7 +34,7 @@ LinkedIn is the hardest mainstream platform to read programmatically and the one
 
 ### How do I get someone's contact details?
 
-`get_profile.js --section=contact`, 25 credits. Passing `--include_email` prices the email separately. Only do this with a lawful basis for processing that person's data.
+`get_profile.js --section=contact` returns the contact record for 25 credits. Separately, the default `get_profile.js` accepts `--include_email`, which adds the email to the base profile and reprices that call from 10 credits to 25. `--include_email` applies only to the default section; it is not accepted anywhere else. Only pull either with a lawful basis for processing that person's data.
 
 ### Can I search LinkedIn for people, companies or jobs?
 

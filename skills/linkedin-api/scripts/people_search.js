@@ -14,9 +14,9 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/linkedin/people-search", input: "query", list: true },
-  "by-name": { path: "/v1/linkedin/people-search-by-name", input: "query", list: true },
-  "by-services": { path: "/v1/linkedin/people-search-by-services", input: "query", list: true },
+  "default": { path: "/v1/linkedin/people-search", input: "query" },
+  "by-name": { path: "/v1/linkedin/people-search-by-name", input: "query" },
+  "by-services": { path: "/v1/linkedin/people-search-by-services", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

@@ -13,8 +13,8 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "comment-replies": { path: "/v1/linkedin/post-comment-replies", input: "url", list: true },
-  "reactions": { path: "/v1/linkedin/post-reactions", input: "url", list: true },
+  "comment-replies": { path: "/v1/linkedin/post-comment-replies", input: "url" },
+  "reactions": { path: "/v1/linkedin/post-reactions", input: "url" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

@@ -18,13 +18,13 @@
 const { callEndpoint, commonParams, main, parseFlags, usage } = require('./_client.js');
 
 const SECTIONS = {
-  "default": { path: "/v1/github/repo", input: "handle", list: false },
-  "commits": { path: "/v1/github/repo-commits", input: "handle", list: true },
-  "contributors": { path: "/v1/github/repo-contributors", input: "handle", list: true },
-  "issues": { path: "/v1/github/repo-issues", input: "handle", list: true },
-  "languages": { path: "/v1/github/repo-languages", input: "handle", list: true },
-  "releases": { path: "/v1/github/repo-releases", input: "handle", list: true },
-  "search": { path: "/v1/github/repo-search", input: "query", list: true },
+  "default": { path: "/v1/github/repo", input: "handle" },
+  "commits": { path: "/v1/github/repo-commits", input: "handle" },
+  "contributors": { path: "/v1/github/repo-contributors", input: "handle" },
+  "issues": { path: "/v1/github/repo-issues", input: "handle" },
+  "languages": { path: "/v1/github/repo-languages", input: "handle" },
+  "releases": { path: "/v1/github/repo-releases", input: "handle" },
+  "search": { path: "/v1/github/repo-search", input: "query" },
 };
 
 const { _, flags } = parseFlags(process.argv.slice(2));

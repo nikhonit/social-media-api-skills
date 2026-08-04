@@ -59,7 +59,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/linktree-api/scripts/get_page.js nasa
+node skills/linktree-api/scripts/get_page.js <linktree-handle>
 ```
 
 Every response uses the same envelope:

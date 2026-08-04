@@ -67,7 +67,7 @@ Every script also accepts `--limit`, `--cursor`, `--fields`, `--format` and `--f
 ## Example
 
 ```bash
-node skills/app-store-api/scripts/get_app_info.js nasa
+node skills/app-store-api/scripts/app_search.js "meditation timer"
 ```
 
 Every response uses the same envelope:

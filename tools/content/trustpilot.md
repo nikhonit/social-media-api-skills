@@ -1,6 +1,7 @@
 ---
 description: Trustpilot data toolkit via ScraperSocial — company review listings as clean JSON.
 tagline: Company review listings.
+example: get_reviews.js <company-domain>
 ---
 
 ## lede

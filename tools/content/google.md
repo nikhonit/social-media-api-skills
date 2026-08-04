@@ -1,6 +1,7 @@
 ---
 description: Google data toolkit via ScraperSocial — search results, Business Profile info, business reviews and updates, and company ad listings.
 tagline: Search results, Business Profile info, reviews and company ads.
+example: search.js "best running shoes 2026"
 ---
 
 ## lede

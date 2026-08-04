@@ -1,6 +1,7 @@
 ---
 description: Naver data toolkit via ScraperSocial — blog, cafe article, local business and shopping search across Korea's dominant portal.
 tagline: Blog, cafe, local and shopping search across Korea's main portal.
+example: blog_search.js "서울 카페"
 ---
 
 ## lede
