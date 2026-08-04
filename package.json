@@ -1,0 +1,42 @@
+{
+  "name": "social-media-api-skills",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Agent skills for reading public data from 33 platforms — TikTok, Instagram, LinkedIn, YouTube, Reddit and more — through the ScraperSocial API. Plain Node.js, zero dependencies.",
+  "homepage": "https://scrapersocial.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikhonit/social-media-api-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nikhonit/social-media-api-skills/issues"
+  },
+  "author": "ScraperSocial",
+  "license": "MIT-0",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "generate": "node tools/generate.mjs",
+    "coverage": "node tools/fetch-coverage.mjs",
+    "test": "node --test tests/*.test.mjs && node tools/generate.mjs --check",
+    "test:claims": "node tools/fetch-coverage.mjs --check"
+  },
+  "keywords": [
+    "social-media-api",
+    "tiktok-api",
+    "instagram-api",
+    "linkedin-api",
+    "youtube-api",
+    "reddit-api",
+    "agent-skills",
+    "claude-skills",
+    "mcp",
+    "mcp-server",
+    "claude",
+    "openai",
+    "cursor",
+    "social-media-data",
+    "web-scraping"
+  ]
+}

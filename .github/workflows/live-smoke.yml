@@ -1,0 +1,47 @@
+name: live smoke
+
+# Manual only. This one spends real credits, so it never runs automatically.
+on:
+  workflow_dispatch:
+
+jobs:
+  smoke:
+    name: call 1-credit endpoints for real
+    runs-on: ubuntu-latest
+    # Skips cleanly rather than failing when the secret is not configured.
+    if: github.repository_owner == 'nikhonit'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check key is present
+        env:
+          SCRAPERSOCIAL_KEY: ${{ secrets.SCRAPERSOCIAL_KEY }}
+        run: |
+          if [ -z "$SCRAPERSOCIAL_KEY" ]; then
+            echo "SCRAPERSOCIAL_KEY secret is not set; nothing to smoke test."
+            exit 1
+          fi
+
+      # Restricted to the cheapest endpoints in the API — 1 credit each.
+      - name: GitHub profile
+        env:
+          SCRAPERSOCIAL_KEY: ${{ secrets.SCRAPERSOCIAL_KEY }}
+        run: node skills/github-api/scripts/get_profile.js torvalds > /dev/null
+
+      - name: Hacker News profile
+        env:
+          SCRAPERSOCIAL_KEY: ${{ secrets.SCRAPERSOCIAL_KEY }}
+        run: node skills/hacker-news-api/scripts/get_profile.js pg > /dev/null
+
+      - name: Bluesky profile
+        env:
+          SCRAPERSOCIAL_KEY: ${{ secrets.SCRAPERSOCIAL_KEY }}
+        run: node skills/bluesky-api/scripts/get_profile.js bsky.app > /dev/null
+
+      - name: Linktree page
+        env:
+          SCRAPERSOCIAL_KEY: ${{ secrets.SCRAPERSOCIAL_KEY }}
+        run: node skills/linktree-api/scripts/get_page.js linktree > /dev/null

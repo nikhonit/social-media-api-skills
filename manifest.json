@@ -1,0 +1,215 @@
+{
+  "name": "social-media-api-skills",
+  "version": "1.0.0",
+  "description": "Agent skills for reading public data from 33 platforms through the ScraperSocial API.",
+  "author": "ScraperSocial",
+  "homepage": "https://scrapersocial.com",
+  "repository": "https://github.com/nikhonit/social-media-api-skills",
+  "license": "MIT-0",
+  "skills": [
+    {
+      "name": "amazon-api",
+      "path": "skills/amazon-api/SKILL.md",
+      "description": "Amazon data toolkit via ScraperSocial — product detail, product search, customer reviews and seller listings as clean JSON.",
+      "endpoints": 4
+    },
+    {
+      "name": "app-store-api",
+      "path": "skills/app-store-api/SKILL.md",
+      "description": "Apple App Store data toolkit via ScraperSocial — app metadata, user reviews, keyword search, category charts and storefront locations.",
+      "endpoints": 6
+    },
+    {
+      "name": "bluesky-api",
+      "path": "skills/bluesky-api/SKILL.md",
+      "description": "Bluesky data toolkit via ScraperSocial — public profiles, user post timelines and keyword search across the network.",
+      "endpoints": 3
+    },
+    {
+      "name": "facebook-api",
+      "path": "skills/facebook-api/SKILL.md",
+      "description": "Facebook data toolkit via ScraperSocial — video transcripts, AI summaries, post and page stats, comments, reels, ads, marketplace, events, groups and reviews.",
+      "endpoints": 23
+    },
+    {
+      "name": "github-api",
+      "path": "skills/github-api/SKILL.md",
+      "description": "GitHub data toolkit via ScraperSocial — repositories, commits, contributors, issues, releases, languages, user profiles, repo search and trending.",
+      "endpoints": 11
+    },
+    {
+      "name": "google-api",
+      "path": "skills/google-api/SKILL.md",
+      "description": "Google data toolkit via ScraperSocial — search results, Business Profile info, business reviews and updates, and company ad listings.",
+      "endpoints": 5
+    },
+    {
+      "name": "google-finance-api",
+      "path": "skills/google-finance-api/SKILL.md",
+      "description": "Google Finance data toolkit via ScraperSocial — live quotes, historical price candles and instrument search.",
+      "endpoints": 3
+    },
+    {
+      "name": "google-maps-api",
+      "path": "skills/google-maps-api/SKILL.md",
+      "description": "Google Maps data toolkit via ScraperSocial — place details, place search, photos and business contact discovery.",
+      "endpoints": 4
+    },
+    {
+      "name": "google-news-api",
+      "path": "skills/google-news-api/SKILL.md",
+      "description": "Google News data toolkit via ScraperSocial — keyword search across news headlines and sources as clean JSON.",
+      "endpoints": 1
+    },
+    {
+      "name": "google-play-api",
+      "path": "skills/google-play-api/SKILL.md",
+      "description": "Google Play data toolkit via ScraperSocial — Android app metadata, user reviews, keyword search and store categories.",
+      "endpoints": 4
+    },
+    {
+      "name": "google-shopping-api",
+      "path": "skills/google-shopping-api/SKILL.md",
+      "description": "Google Shopping data toolkit via ScraperSocial — product search across merchants with pricing as clean JSON.",
+      "endpoints": 1
+    },
+    {
+      "name": "google-trends-api",
+      "path": "skills/google-trends-api/SKILL.md",
+      "description": "Google Trends data toolkit via ScraperSocial — interest-over-time exploration and rising related queries.",
+      "endpoints": 2
+    },
+    {
+      "name": "hacker-news-api",
+      "path": "skills/hacker-news-api/SKILL.md",
+      "description": "Hacker News data toolkit via ScraperSocial — stories, full comment threads, user profiles and keyword search.",
+      "endpoints": 4
+    },
+    {
+      "name": "instagram-api",
+      "path": "skills/instagram-api/SKILL.md",
+      "description": "Instagram data toolkit via ScraperSocial — reel transcripts, AI summaries, profile and post stats, comments, hashtag and location analytics, keyword search.",
+      "endpoints": 23
+    },
+    {
+      "name": "kwai-api",
+      "path": "skills/kwai-api/SKILL.md",
+      "description": "Kwai data toolkit via ScraperSocial — creator profiles, user post listings and single video lookups.",
+      "endpoints": 3
+    },
+    {
+      "name": "linkedin-api",
+      "path": "skills/linkedin-api/SKILL.md",
+      "description": "LinkedIn data toolkit via ScraperSocial — profiles and 20 sub-resources, company data, people/company/job search, posts, comments, reactions and ad search.",
+      "endpoints": 38
+    },
+    {
+      "name": "linkme-api",
+      "path": "skills/linkme-api/SKILL.md",
+      "description": "Linkme data toolkit via ScraperSocial — resolve a Linkme page to the links and profile details it publishes.",
+      "endpoints": 1
+    },
+    {
+      "name": "linktree-api",
+      "path": "skills/linktree-api/SKILL.md",
+      "description": "Linktree data toolkit via ScraperSocial — resolve a Linktree page to the links and profile details it publishes.",
+      "endpoints": 1
+    },
+    {
+      "name": "naver-api",
+      "path": "skills/naver-api/SKILL.md",
+      "description": "Naver data toolkit via ScraperSocial — blog, cafe article, local business and shopping search across Korea's dominant portal.",
+      "endpoints": 4
+    },
+    {
+      "name": "pinterest-api",
+      "path": "skills/pinterest-api/SKILL.md",
+      "description": "Pinterest data toolkit via ScraperSocial — pin details, keyword search and save counts for any URL.",
+      "endpoints": 3
+    },
+    {
+      "name": "polymarket-api",
+      "path": "skills/polymarket-api/SKILL.md",
+      "description": "Polymarket data toolkit via ScraperSocial — prediction market listings and current odds as clean JSON.",
+      "endpoints": 1
+    },
+    {
+      "name": "reddit-api",
+      "path": "skills/reddit-api/SKILL.md",
+      "description": "Reddit data toolkit via ScraperSocial — posts, full comment threads, subreddit listings and details, user profiles and keyword search.",
+      "endpoints": 8
+    },
+    {
+      "name": "snapchat-api",
+      "path": "skills/snapchat-api/SKILL.md",
+      "description": "Snapchat data toolkit via ScraperSocial — public creator profile lookups as clean JSON.",
+      "endpoints": 1
+    },
+    {
+      "name": "spotify-api",
+      "path": "skills/spotify-api/SKILL.md",
+      "description": "Spotify data toolkit via ScraperSocial — tracks, albums, artists, top tracks, playlists and catalogue search.",
+      "endpoints": 6
+    },
+    {
+      "name": "threads-api",
+      "path": "skills/threads-api/SKILL.md",
+      "description": "Threads data toolkit via ScraperSocial — profiles, user post timelines, post stats, keyword search and user search.",
+      "endpoints": 5
+    },
+    {
+      "name": "tiktok-api",
+      "path": "skills/tiktok-api/SKILL.md",
+      "description": "TikTok data toolkit via ScraperSocial — video transcripts, AI summaries, post and channel stats, comments, follower lists, song lookups, keyword and hashtag search.",
+      "endpoints": 16
+    },
+    {
+      "name": "tiktok-shop-api",
+      "path": "skills/tiktok-shop-api/SKILL.md",
+      "description": "TikTok Shop data toolkit via ScraperSocial — product detail, product reviews, shop catalogues, creator showcases and product search.",
+      "endpoints": 5
+    },
+    {
+      "name": "tripadvisor-api",
+      "path": "skills/tripadvisor-api/SKILL.md",
+      "description": "Tripadvisor data toolkit via ScraperSocial — property and attraction search plus full review listings.",
+      "endpoints": 2
+    },
+    {
+      "name": "trustpilot-api",
+      "path": "skills/trustpilot-api/SKILL.md",
+      "description": "Trustpilot data toolkit via ScraperSocial — company review listings as clean JSON.",
+      "endpoints": 1
+    },
+    {
+      "name": "truth-social-api",
+      "path": "skills/truth-social-api/SKILL.md",
+      "description": "Truth Social data toolkit via ScraperSocial — public profiles and user post timelines as clean JSON.",
+      "endpoints": 2
+    },
+    {
+      "name": "twitch-api",
+      "path": "skills/twitch-api/SKILL.md",
+      "description": "Twitch data toolkit via ScraperSocial — streamer profiles, clips and user video listings as clean JSON.",
+      "endpoints": 3
+    },
+    {
+      "name": "twitter-api",
+      "path": "skills/twitter-api/SKILL.md",
+      "description": "X (Twitter) data toolkit via ScraperSocial — video transcripts, AI summaries, post stats, profiles, user tweets, list tweets and keyword search.",
+      "endpoints": 7
+    },
+    {
+      "name": "youtube-api",
+      "path": "skills/youtube-api/SKILL.md",
+      "description": "YouTube data toolkit via ScraperSocial — transcripts, captions and subtitles, video and channel stats, comments and replies, Shorts, search, trending and media URLs.",
+      "endpoints": 26
+    },
+    {
+      "name": "social-media-api",
+      "path": "skills/social-media-api/SKILL.md",
+      "description": "One social media API skill for all 33 platforms — discover every available endpoint and call any of them by path, without installing a per-platform skill.",
+      "endpoints": 227
+    }
+  ]
+}

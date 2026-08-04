@@ -1,0 +1,51 @@
+name: test
+
+on:
+  push:
+  pull_request:
+  schedule:
+    # Weekly, so drift between this repo and the live API is caught even when
+    # nobody has pushed. This is the check that stops the docs going stale.
+    - cron: '0 6 * * 1'
+
+jobs:
+  unit:
+    name: unit tests and generator drift
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # No network, no API key, no credits.
+      - name: Unit tests
+        run: node --test tests/*.test.mjs
+
+      # Regenerating must be a no-op. If it isn't, someone edited generated
+      # files by hand, or changed a template without rebuilding.
+      - name: Generated tree is current
+        run: node tools/generate.mjs --check
+
+  claims:
+    name: claims match the live API
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # Fetches the public OpenAPI spec and fails if any endpoint, credit cost
+      # or platform count in this repo disagrees with it. No key needed.
+      - name: coverage.json matches the live spec
+        run: node tools/fetch-coverage.mjs --check
+
+      # A failure above means the API changed. Regenerating here proves the
+      # repo can be brought back into line, and shows what would change.
+      - name: Show what regeneration would change
+        if: failure()
+        run: |
+          node tools/fetch-coverage.mjs
+          node tools/generate.mjs
+          git --no-pager diff --stat
