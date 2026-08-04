@@ -38,7 +38,7 @@ Yes. `get_stats.js --section=page-stats` returns page-level metrics for 10 credi
 
 ### Does this cover the Facebook ad library?
 
-Yes. `get_ads.js --section=search` searches the ad library by keyword, `get_ads.js` fetches a single ad by URL, and `get_page.js --section=ads` lists the ads running for a given page.
+Yes. `get_ads.js --section=search` searches the ad library by keyword, `get_ads.js --section=ad` fetches a single ad by URL, and `get_page.js --section=ads` lists the ads running for a given page. This script has no default section, so `--section` is required.
 
 ### Is this an official Facebook or Meta API?
 

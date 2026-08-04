@@ -85,9 +85,31 @@ function validateContentReferences(key, content, families) {
     if (!sections.has(name)) problems.push(`example uses --section=${name}, which does not exist`);
   }
 
-  for (const [, name] of content.raw.matchAll(/`([a-z0-9_]+\.js)`/g)) {
+  // Scripts whose family has no capability matching the family name require an
+  // explicit --section. Prose that shows them bare documents a command that
+  // exits with a usage error.
+  const needsSection = new Set(
+    families
+      .filter((f) => f.sections.length > 1 && !f.sections.some((s) => s.section === null))
+      .map((f) => scriptName(f.name))
+  );
+
+  for (const match of content.raw.matchAll(/`([a-z0-9_]+\.js)`/g)) {
+    const name = match[1];
     if (!scripts.has(name)) {
       problems.push(`references script \`${name}\`, which is not generated. Generated: ${[...scripts].sort().join(', ')}`);
+      continue;
+    }
+    // Allow "`get_shorts.js` with `--section=search`" as well as "`x.js --section=y`".
+    const following = content.raw.slice(match.index, match.index + name.length + 30);
+    if (needsSection.has(name) && !/--section/.test(following)) {
+      const valid = families
+        .find((f) => scriptName(f.name) === name)
+        .sections.map((s) => s.section)
+        .join(', ');
+      problems.push(
+        `shows \`${name}\` with no --section, but it has no default section. Valid: ${valid}`
+      );
     }
   }
   for (const [, name] of content.raw.matchAll(/--section=([a-z0-9-]+)/g)) {

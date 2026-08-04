@@ -46,7 +46,7 @@ This skill wraps **26 live YouTube endpoints** from the [ScraperSocial](https://
 - **The user only wants the title they already pasted.** No call needed.
 - **You need your own channel's analytics.** Watch time, retention and revenue are account-scoped — use YouTube Analytics.
 - **You need to upload, comment or manage a channel.** Read-only.
-- **You intend to redistribute the media.** `get_media.js` returns file URLs for technical access; downloading and republishing content you do not own is a copyright matter and usually a terms violation. Use it for analysis, not distribution.
+- **You intend to redistribute the media.** `get_media.js --section=video-files` returns file URLs for technical access; downloading and republishing content you do not own is a copyright matter and usually a terms violation. Use it for analysis, not distribution.
 
 ## Setup
 
