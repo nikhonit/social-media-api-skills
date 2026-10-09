@@ -27,16 +27,16 @@ hermes skills install skills-sh/nikhonit/social-media-api-skills/skills/social-m
 npx skills add nikhonit/social-media-api-skills
 ```
 
-Or install one platform, when you already know which you need:
+Or install one platform, when you already know which you need. The per-platform skills are published on ClawHub under brand-prefixed slugs (the bare `tiktok-api` style names belong to other publishers):
 
 ```bash
-npx clawhub@latest install tiktok-api
-npx clawhub@latest install instagram-api
-npx clawhub@latest install linkedin-api
-npx clawhub@latest install youtube-api
+npx clawhub@latest install scrapersocial-tiktok
+npx clawhub@latest install scrapersocial-instagram
+npx clawhub@latest install scrapersocial-linkedin
+npx clawhub@latest install scrapersocial-youtube
 ```
 
-Any skill name from the table below works. The per-platform skills carry argument
+Every other platform in the table below installs with `npx skills add nikhonit/social-media-api-skills` (all skills) or by copying its folder from `skills/`. The per-platform skills carry argument
 validation, per-endpoint costs and guidance on when *not* to spend credits; the
 catch-all trades that for reach.
 
@@ -137,6 +137,10 @@ These are plain Node scripts with a documented contract, so anything that can ru
 ### Zero install: the hosted MCP server
 
 If you would rather not vendor anything, ScraperSocial runs a hosted MCP server that reaches the same endpoints:
+
+[![Add to Cursor](https://img.shields.io/badge/Add_to-Cursor-000000.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=scrapersocial&config=eyJ1cmwiOiJodHRwczovL21jcC5zY3JhcGVyc29jaWFsLmNvbSJ9) [![Add to VS Code](https://img.shields.io/badge/Add_to-VS_Code-0078d4.svg)](https://insiders.vscode.dev/redirect?url=vscode%3Amcp%2Finstall%3F%257B%2522name%2522%253A%2522scrapersocial%2522%252C%2522type%2522%253A%2522http%2522%252C%2522url%2522%253A%2522https%253A%252F%252Fmcp.scrapersocial.com%2522%257D)
+
+Claude.ai: Settings → Connectors → Add custom connector → `https://mcp.scrapersocial.com` (OAuth, no key to paste). Full per-client instructions, including Windsurf, Gemini CLI and ChatGPT, are at <https://scrapersocial.com/mcp/>.
 
 ```bash
 claude mcp add --transport http scrapersocial https://mcp.scrapersocial.com
