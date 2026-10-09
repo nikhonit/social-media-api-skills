@@ -27,16 +27,44 @@ hermes skills install skills-sh/nikhonit/social-media-api-skills/skills/social-m
 npx skills add nikhonit/social-media-api-skills
 ```
 
-Or install one platform, when you already know which you need. The per-platform skills are published on ClawHub under brand-prefixed slugs (the bare `tiktok-api` style names belong to other publishers):
+Or install one platform, when you already know which you need. Every platform skill is on ClawHub under a `scrapersocial-` prefixed slug:
 
 ```bash
 npx clawhub@latest install scrapersocial-tiktok
 npx clawhub@latest install scrapersocial-instagram
 npx clawhub@latest install scrapersocial-linkedin
-npx clawhub@latest install scrapersocial-youtube
+npx clawhub@latest install scrapersocial-twitter
+npx clawhub@latest install scrapersocial-reddit
+npx clawhub@latest install scrapersocial-threads
+npx clawhub@latest install scrapersocial-facebook
+npx clawhub@latest install scrapersocial-amazon
+npx clawhub@latest install scrapersocial-app-store
+npx clawhub@latest install scrapersocial-bluesky
+npx clawhub@latest install scrapersocial-github
+npx clawhub@latest install scrapersocial-google
+npx clawhub@latest install scrapersocial-google-finance
+npx clawhub@latest install scrapersocial-google-maps
+npx clawhub@latest install scrapersocial-google-news
+npx clawhub@latest install scrapersocial-google-play
+npx clawhub@latest install scrapersocial-google-shopping
+npx clawhub@latest install scrapersocial-google-trends
+npx clawhub@latest install scrapersocial-hacker-news
+npx clawhub@latest install scrapersocial-kwai
+npx clawhub@latest install scrapersocial-linkme
+npx clawhub@latest install scrapersocial-linktree
+npx clawhub@latest install scrapersocial-naver
+npx clawhub@latest install scrapersocial-pinterest
+npx clawhub@latest install scrapersocial-polymarket
+npx clawhub@latest install scrapersocial-snapchat
+npx clawhub@latest install scrapersocial-spotify
+npx clawhub@latest install scrapersocial-tiktok-shop
+npx clawhub@latest install scrapersocial-tripadvisor
+npx clawhub@latest install scrapersocial-trustpilot
+npx clawhub@latest install scrapersocial-truth-social
+npx clawhub@latest install scrapersocial-twitch
 ```
 
-Every other platform in the table below installs with `npx skills add nikhonit/social-media-api-skills` (all skills) or by copying its folder from `skills/`. The per-platform skills carry argument
+`npx skills add nikhonit/social-media-api-skills` installs every skill in the repo at once. The per-platform skills carry argument
 validation, per-endpoint costs and guidance on when *not* to spend credits; the
 catch-all trades that for reach.
 

@@ -13,7 +13,7 @@ Prefer the hosted MCP server when the client supports MCP: add `https://mcp.scra
 
 Otherwise install the skill files:
 - All skills: `npx skills add nikhonit/social-media-api-skills`
-- One platform: `npx clawhub@latest install scrapersocial-tiktok` (also `-instagram`, `-linkedin`, `-youtube`), or copy `skills/<platform>-api/` into the agent's skills directory.
+- One platform: `npx clawhub@latest install scrapersocial-<platform>` where `<platform>` is the skill folder name without `-api` (for example `scrapersocial-tiktok`, `scrapersocial-instagram`, `scrapersocial-linkedin`, `scrapersocial-reddit`), or copy `skills/<platform>-api/` into the agent's skills directory.
 - The catch-all `skills/social-media-api/` reaches every endpoint on every platform through `scripts/list_endpoints.js` and `scripts/call_endpoint.js`.
 
 ## 4. Verify
