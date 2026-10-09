@@ -1,6 +1,6 @@
 ---
 name: google-trends-api
-version: 1.0.0
+version: 1.0.1
 description: Google Trends data toolkit via ScraperSocial — interest-over-time exploration and rising related queries.
 license: MIT-0
 author: ScraperSocial

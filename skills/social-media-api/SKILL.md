@@ -1,6 +1,6 @@
 ---
 name: social-media-api
-version: 1.0.0
+version: 1.0.1
 description: One social media API skill for all 33 platforms — discover every available endpoint and call any of them by path, without installing a per-platform skill.
 license: MIT-0
 author: ScraperSocial

@@ -1,6 +1,6 @@
 ---
 name: polymarket-api
-version: 1.0.0
+version: 1.0.1
 description: Polymarket data toolkit via ScraperSocial — prediction market listings and current odds as clean JSON.
 license: MIT-0
 author: ScraperSocial

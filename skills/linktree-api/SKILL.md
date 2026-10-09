@@ -1,6 +1,6 @@
 ---
 name: linktree-api
-version: 1.0.0
+version: 1.0.1
 description: Linktree data toolkit via ScraperSocial — resolve a Linktree page to the links and profile details it publishes.
 license: MIT-0
 author: ScraperSocial

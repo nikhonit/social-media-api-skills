@@ -1,6 +1,6 @@
 ---
 name: naver-api
-version: 1.0.0
+version: 1.0.1
 description: Naver data toolkit via ScraperSocial — blog, cafe article, local business and shopping search across Korea's dominant portal.
 license: MIT-0
 author: ScraperSocial

@@ -1,6 +1,6 @@
 ---
 name: reddit-api
-version: 1.0.0
+version: 1.0.1
 description: Reddit data toolkit via ScraperSocial — posts, full comment threads, subreddit listings and details, user profiles and keyword search.
 license: MIT-0
 author: ScraperSocial
