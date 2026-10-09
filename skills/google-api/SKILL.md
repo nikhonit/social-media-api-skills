@@ -1,6 +1,6 @@
 ---
 name: google-api
-version: 1.0.1
+version: 1.0.2
 description: Google data toolkit via ScraperSocial — search results, Business Profile info, business reviews and updates, and company ad listings.
 license: MIT-0
 author: ScraperSocial
@@ -14,6 +14,7 @@ tags:
   - social-media
   - api
   - mcp
+allowed-tools: Bash(node:*)
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY
@@ -21,6 +22,11 @@ metadata:
     requires:
       env:
         - SCRAPERSOCIAL_KEY
+    network:
+      allow:
+        - api.scrapersocial.com
+    shell:
+      only: scripts/*.js
 ---
 
 # Google API skill
@@ -50,6 +56,10 @@ export SCRAPERSOCIAL_KEY=sk_live_...   # https://scrapersocial.com/app/keys
 ```
 
 Signing up at [scrapersocial.com/signup](https://scrapersocial.com/signup) includes 100 free credits, no card required.
+
+## Permissions and scope
+
+These scripts do exactly three things and nothing else: read one environment variable (`SCRAPERSOCIAL_KEY`), send HTTPS requests to `https://api.scrapersocial.com` (the host is a constant in the code, not configurable), and print JSON. They run as `node scripts/<name>.js` with no other shell use, no file writes and no persistence. `call_endpoint.js` accepts only the 5 documented `/v1/google/` paths in the table below and refuses anything else before a request is made.
 
 ## Scripts
 

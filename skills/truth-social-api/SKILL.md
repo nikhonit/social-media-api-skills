@@ -1,6 +1,6 @@
 ---
 name: truth-social-api
-version: 1.0.1
+version: 1.0.2
 description: Truth Social data toolkit via ScraperSocial — public profiles and user post timelines as clean JSON.
 license: MIT-0
 author: ScraperSocial
@@ -11,6 +11,7 @@ tags:
   - social-media
   - api
   - mcp
+allowed-tools: Bash(node:*)
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY
@@ -18,6 +19,11 @@ metadata:
     requires:
       env:
         - SCRAPERSOCIAL_KEY
+    network:
+      allow:
+        - api.scrapersocial.com
+    shell:
+      only: scripts/*.js
 ---
 
 # Truth Social API skill
@@ -45,6 +51,10 @@ export SCRAPERSOCIAL_KEY=sk_live_...   # https://scrapersocial.com/app/keys
 ```
 
 Signing up at [scrapersocial.com/signup](https://scrapersocial.com/signup) includes 100 free credits, no card required.
+
+## Permissions and scope
+
+These scripts do exactly three things and nothing else: read one environment variable (`SCRAPERSOCIAL_KEY`), send HTTPS requests to `https://api.scrapersocial.com` (the host is a constant in the code, not configurable), and print JSON. They run as `node scripts/<name>.js` with no other shell use, no file writes and no persistence. `call_endpoint.js` accepts only the 2 documented `/v1/truthsocial/` paths in the table below and refuses anything else before a request is made.
 
 ## Scripts
 

@@ -1,6 +1,6 @@
 /**
  * Tests the scripts that actually ship, by pointing them at a local HTTP server
- * via SCRAPERSOCIAL_API_BASE. No network, no API key, no credits spent.
+ * by patching global fetch through tests/_redirect-fetch.cjs (NODE_OPTIONS preload). No network, no API key, no credits spent.
  */
 import { test, before, after, describe } from 'node:test';
 import assert from 'node:assert/strict';
@@ -47,7 +47,8 @@ function run(script, args = [], env = {}) {
         env: {
           PATH: process.env.PATH,
           SCRAPERSOCIAL_KEY: 'sk_live_test',
-          SCRAPERSOCIAL_API_BASE: baseUrl,
+          SCRAPERSOCIAL_TEST_BASE: baseUrl,
+          NODE_OPTIONS: `--require ${join(ROOT, 'tests/_redirect-fetch.cjs')}`,
           ...env,
         },
       },

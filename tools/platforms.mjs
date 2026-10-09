@@ -21,7 +21,7 @@
 
 export const REPO = {
   name: 'social-media-api-skills',
-  version: '1.0.1',
+  version: '1.0.2',
   owner: 'nikhonit',
   url: 'https://github.com/nikhonit/social-media-api-skills',
   homepage: 'https://scrapersocial.com',

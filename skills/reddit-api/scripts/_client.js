@@ -10,27 +10,14 @@
  */
 
 /**
- * The API key is only ever sent to this host. The one exception is the test
- * suite, which points scripts at a mock server on the local machine; an
- * override that names any non-loopback host is ignored, so no environment
- * variable can redirect the key elsewhere.
+ * The API key is only ever sent to this host. It is a constant on purpose:
+ * nothing in the environment, the arguments or the configuration can redirect
+ * a request elsewhere. The test suite talks to a local mock by patching
+ * global fetch in a preload module; the shipped code has no override.
  */
-const PRODUCTION_BASE = 'https://api.scrapersocial.com';
-const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '[::1]']);
-function resolveApiBase() {
-  const override = process.env.SCRAPERSOCIAL_API_BASE;
-  if (!override) return PRODUCTION_BASE;
-  try {
-    const parsed = new URL(override);
-    if (LOOPBACK_HOSTS.has(parsed.hostname)) return override.replace(/\/+$/, '');
-  } catch {
-    /* fall through to production */
-  }
-  return PRODUCTION_BASE;
-}
-const API_BASE = resolveApiBase();
+const API_BASE = 'https://api.scrapersocial.com';
 const ENV_VAR = 'SCRAPERSOCIAL_KEY';
-const VERSION = '1.0.1';
+const VERSION = '1.0.2';
 const USER_AGENT =
   `social-media-api-skills/${VERSION} (+https://github.com/nikhonit/social-media-api-skills)`;
 

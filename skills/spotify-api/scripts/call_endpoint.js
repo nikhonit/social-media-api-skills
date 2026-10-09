@@ -2,9 +2,11 @@
 'use strict';
 
 /**
- * Escape hatch: call any Spotify endpoint by path, including ones that
- * have no dedicated script. Every flag after the path is passed through as a
- * query parameter.
+ * Call any documented Spotify endpoint by path, including ones that
+ * have no dedicated script. Only the paths listed in ALLOWED (the same set
+ * documented in SKILL.md) are accepted; anything else is refused before a
+ * request is made. Every flag after the path is passed through as a query
+ * parameter.
  *
  *   node call_endpoint.js /v1/spotify/<capability> --handle nasa --limit 20
  *
@@ -14,14 +16,18 @@
 const { callEndpoint, main, parseFlags, usage } = require('./_client.js');
 
 const PREFIX = '/v1/spotify/';
+const ALLOWED = new Set(["/v1/spotify/album","/v1/spotify/artist","/v1/spotify/artist-top-tracks","/v1/spotify/playlist","/v1/spotify/search","/v1/spotify/track"]);
 const { _, flags } = parseFlags(process.argv.slice(2));
 const path = _[0];
 
 if (!path) {
   usage('Usage: node call_endpoint.js ' + PREFIX + '<capability> [--param value ...]');
 }
-if (!path.startsWith(PREFIX)) {
-  usage('This script only calls ' + PREFIX + '* paths. Got: ' + path);
+if (!ALLOWED.has(path)) {
+  usage(
+    'This script only calls the documented ' + PREFIX + '* endpoints. Got: ' + path +
+      '\nAllowed:\n  ' + [...ALLOWED].join('\n  ')
+  );
 }
 
 const params = {};

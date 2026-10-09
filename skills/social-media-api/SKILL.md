@@ -1,6 +1,6 @@
 ---
 name: social-media-api
-version: 1.0.1
+version: 1.0.2
 description: One social media API skill for all 33 platforms — discover every available endpoint and call any of them by path, without installing a per-platform skill.
 license: MIT-0
 author: ScraperSocial
@@ -13,6 +13,7 @@ tags:
   - api
   - web-scraping
   - social-media
+allowed-tools: Bash(node:*)
 metadata:
   openclaw:
     primaryEnv: SCRAPERSOCIAL_KEY
@@ -20,6 +21,11 @@ metadata:
     requires:
       env:
         - SCRAPERSOCIAL_KEY
+    network:
+      allow:
+        - api.scrapersocial.com
+    shell:
+      only: scripts/*.js
 ---
 
 # Social media API skill
@@ -48,6 +54,10 @@ This skill reaches **all 227 endpoints across 33 platforms** in one place, inste
 ```bash
 export SCRAPERSOCIAL_KEY=sk_live_...   # https://scrapersocial.com/app/keys
 ```
+
+## Permissions and scope
+
+These scripts do exactly three things and nothing else: read one environment variable (`SCRAPERSOCIAL_KEY`), send HTTPS requests to `https://api.scrapersocial.com` (the host is a constant in the code, not configurable), and print JSON. They run as `node scripts/<name>.js` with no other shell use, no file writes and no persistence. `call_endpoint.js` accepts only paths present in the bundled `endpoints.json` catalogue and refuses anything else before a request is made.
 
 ## Scripts
 

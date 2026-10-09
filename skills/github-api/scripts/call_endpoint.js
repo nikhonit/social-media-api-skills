@@ -2,9 +2,11 @@
 'use strict';
 
 /**
- * Escape hatch: call any GitHub endpoint by path, including ones that
- * have no dedicated script. Every flag after the path is passed through as a
- * query parameter.
+ * Call any documented GitHub endpoint by path, including ones that
+ * have no dedicated script. Only the paths listed in ALLOWED (the same set
+ * documented in SKILL.md) are accepted; anything else is refused before a
+ * request is made. Every flag after the path is passed through as a query
+ * parameter.
  *
  *   node call_endpoint.js /v1/github/<capability> --handle nasa --limit 20
  *
@@ -14,14 +16,18 @@
 const { callEndpoint, main, parseFlags, usage } = require('./_client.js');
 
 const PREFIX = '/v1/github/';
+const ALLOWED = new Set(["/v1/github/org-repos","/v1/github/profile","/v1/github/repo","/v1/github/repo-commits","/v1/github/repo-contributors","/v1/github/repo-issues","/v1/github/repo-languages","/v1/github/repo-releases","/v1/github/repo-search","/v1/github/trending","/v1/github/user-repos"]);
 const { _, flags } = parseFlags(process.argv.slice(2));
 const path = _[0];
 
 if (!path) {
   usage('Usage: node call_endpoint.js ' + PREFIX + '<capability> [--param value ...]');
 }
-if (!path.startsWith(PREFIX)) {
-  usage('This script only calls ' + PREFIX + '* paths. Got: ' + path);
+if (!ALLOWED.has(path)) {
+  usage(
+    'This script only calls the documented ' + PREFIX + '* endpoints. Got: ' + path +
+      '\nAllowed:\n  ' + [...ALLOWED].join('\n  ')
+  );
 }
 
 const params = {};

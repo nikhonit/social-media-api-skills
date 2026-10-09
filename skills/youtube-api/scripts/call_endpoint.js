@@ -2,9 +2,11 @@
 'use strict';
 
 /**
- * Escape hatch: call any YouTube endpoint by path, including ones that
- * have no dedicated script. Every flag after the path is passed through as a
- * query parameter.
+ * Call any documented YouTube endpoint by path, including ones that
+ * have no dedicated script. Only the paths listed in ALLOWED (the same set
+ * documented in SKILL.md) are accepted; anything else is refused before a
+ * request is made. Every flag after the path is passed through as a query
+ * parameter.
  *
  *   node call_endpoint.js /v1/youtube/<capability> --handle nasa --limit 20
  *
@@ -14,14 +16,18 @@
 const { callEndpoint, main, parseFlags, usage } = require('./_client.js');
 
 const PREFIX = '/v1/youtube/';
+const ALLOWED = new Set(["/v1/youtube/captions","/v1/youtube/channel-lives","/v1/youtube/channel-search","/v1/youtube/channel-shorts","/v1/youtube/channel-stats","/v1/youtube/channel-top-videos","/v1/youtube/channel-videos","/v1/youtube/comment-replies","/v1/youtube/comments","/v1/youtube/comments-top","/v1/youtube/hashtag-search","/v1/youtube/playlist-items","/v1/youtube/search","/v1/youtube/search-recent","/v1/youtube/search-suggestions","/v1/youtube/shorts-hashtag-search","/v1/youtube/shorts-search","/v1/youtube/shorts-trending","/v1/youtube/stats","/v1/youtube/streams-search","/v1/youtube/subtitles","/v1/youtube/thumbnails","/v1/youtube/transcript","/v1/youtube/trending","/v1/youtube/video-audio","/v1/youtube/video-files"]);
 const { _, flags } = parseFlags(process.argv.slice(2));
 const path = _[0];
 
 if (!path) {
   usage('Usage: node call_endpoint.js ' + PREFIX + '<capability> [--param value ...]');
 }
-if (!path.startsWith(PREFIX)) {
-  usage('This script only calls ' + PREFIX + '* paths. Got: ' + path);
+if (!ALLOWED.has(path)) {
+  usage(
+    'This script only calls the documented ' + PREFIX + '* endpoints. Got: ' + path +
+      '\nAllowed:\n  ' + [...ALLOWED].join('\n  ')
+  );
 }
 
 const params = {};
