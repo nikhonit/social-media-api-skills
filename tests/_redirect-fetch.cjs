@@ -16,3 +16,12 @@ if (target) {
     return real(url.toString(), init);
   };
 }
+
+// The shipped client uses a fixed 60s request timeout. Tests that exercise the
+// timeout path cap it here instead of through the client, so no environment
+// variable reaches the shipped code.
+const cap = Number(process.env.SCRAPERSOCIAL_TEST_TIMEOUT_MS);
+if (cap > 0) {
+  const realTimeout = AbortSignal.timeout.bind(AbortSignal);
+  AbortSignal.timeout = (ms) => realTimeout(Math.min(ms, cap));
+}

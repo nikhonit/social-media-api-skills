@@ -301,7 +301,7 @@ describe('timeouts', () => {
     const { code, stderr } = await run(
       'skills/github-api/scripts/get_profile.js',
       ['torvalds'],
-      { SCRAPERSOCIAL_TIMEOUT_MS: '150' }
+      { SCRAPERSOCIAL_TEST_TIMEOUT_MS: '150' }
     );
     assert.equal(code, 1);
     assert.match(stderr, /timeout/);
