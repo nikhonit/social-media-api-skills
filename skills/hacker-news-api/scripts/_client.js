@@ -17,7 +17,7 @@
  */
 const API_BASE = 'https://api.scrapersocial.com';
 const ENV_VAR = 'SCRAPERSOCIAL_KEY';
-const VERSION = '1.0.3';
+const VERSION = '1.0.4';
 const USER_AGENT =
   `social-media-api-skills/${VERSION} (+https://github.com/nikhonit/social-media-api-skills)`;
 
@@ -34,9 +34,10 @@ const MAX_ATTEMPTS = 4;
 /**
  * Without this a stalled connection hangs forever, which is much worse when an
  * agent is running these as subprocesses. Transcript and summary endpoints do
- * real work, so the default is generous.
+ * real work, so the value is generous. It is a constant: the scripts read no
+ * environment variable other than the API key.
  */
-const REQUEST_TIMEOUT_MS = Number(process.env.SCRAPERSOCIAL_TIMEOUT_MS) || 60_000;
+const REQUEST_TIMEOUT_MS = 60_000;
 
 /** Print a machine-readable error and exit non-zero. */
 function fail(error, detail, requestId) {
@@ -111,7 +112,7 @@ async function callEndpoint(path, params = {}) {
         fail(
           timedOut ? 'timeout' : 'network_error',
           timedOut
-            ? `No response after ${REQUEST_TIMEOUT_MS}ms. Raise SCRAPERSOCIAL_TIMEOUT_MS if the endpoint is a slow one.`
+            ? `No response after ${REQUEST_TIMEOUT_MS}ms. Retry; transcript and summary endpoints can be slow on long media.`
             : String(cause && cause.message ? cause.message : cause)
         );
       }

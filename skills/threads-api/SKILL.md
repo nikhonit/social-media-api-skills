@@ -1,6 +1,6 @@
 ---
 name: threads-api
-version: 1.0.3
+version: 1.0.4
 description: Threads data toolkit via ScraperSocial — profiles, user post timelines, post stats, keyword search and user search.
 license: MIT-0
 author: ScraperSocial

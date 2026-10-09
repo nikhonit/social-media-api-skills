@@ -1,6 +1,6 @@
 ---
 name: twitch-api
-version: 1.0.3
+version: 1.0.4
 description: Twitch data toolkit via ScraperSocial — streamer profiles, clips and user video listings as clean JSON.
 license: MIT-0
 author: ScraperSocial

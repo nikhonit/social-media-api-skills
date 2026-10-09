@@ -1,6 +1,6 @@
 ---
 name: tripadvisor-api
-version: 1.0.3
+version: 1.0.4
 description: Tripadvisor data toolkit via ScraperSocial — property and attraction search plus full review listings.
 license: MIT-0
 author: ScraperSocial

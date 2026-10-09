@@ -1,6 +1,6 @@
 ---
 name: tiktok-api
-version: 1.0.3
+version: 1.0.4
 description: TikTok data toolkit via ScraperSocial — video transcripts, AI summaries, post and channel stats, comments, follower lists, song lookups, keyword and hashtag search.
 license: MIT-0
 author: ScraperSocial

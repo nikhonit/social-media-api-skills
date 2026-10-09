@@ -1,6 +1,6 @@
 ---
 name: linkedin-api
-version: 1.0.3
+version: 1.0.4
 description: LinkedIn data toolkit via ScraperSocial — profiles and 20 sub-resources, company data, people/company/job search, posts, comments, reactions and ad search.
 license: MIT-0
 author: ScraperSocial

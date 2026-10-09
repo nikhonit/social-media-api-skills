@@ -1,6 +1,6 @@
 ---
 name: facebook-api
-version: 1.0.3
+version: 1.0.4
 description: Facebook data toolkit via ScraperSocial — video transcripts, AI summaries, post and page stats, comments, reels, ads, marketplace, events, groups and reviews.
 license: MIT-0
 author: ScraperSocial

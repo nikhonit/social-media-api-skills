@@ -1,6 +1,6 @@
 ---
 name: app-store-api
-version: 1.0.3
+version: 1.0.4
 description: Apple App Store data toolkit via ScraperSocial — app metadata, user reviews, keyword search, category charts and storefront locations.
 license: MIT-0
 author: ScraperSocial

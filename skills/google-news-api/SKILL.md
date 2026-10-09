@@ -1,6 +1,6 @@
 ---
 name: google-news-api
-version: 1.0.3
+version: 1.0.4
 description: Google News data toolkit via ScraperSocial — keyword search across news headlines and sources as clean JSON.
 license: MIT-0
 author: ScraperSocial

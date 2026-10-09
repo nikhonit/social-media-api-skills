@@ -1,6 +1,6 @@
 ---
 name: google-maps-api
-version: 1.0.3
+version: 1.0.4
 description: Google Maps data toolkit via ScraperSocial — place details, place search, photos and business contact discovery.
 license: MIT-0
 author: ScraperSocial

@@ -1,6 +1,6 @@
 ---
 name: social-media-api
-version: 1.0.3
+version: 1.0.4
 description: One skill for ScraperSocial's public social media and web data API — discover every documented endpoint across 33 sources (social networks plus Amazon, Google, app stores, review sites and prediction markets) and call any of them by path. Personal-contact endpoints are excluded.
 license: MIT-0
 author: ScraperSocial

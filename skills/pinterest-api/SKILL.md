@@ -1,6 +1,6 @@
 ---
 name: pinterest-api
-version: 1.0.3
+version: 1.0.4
 description: Pinterest data toolkit via ScraperSocial — pin details, keyword search and save counts for any URL.
 license: MIT-0
 author: ScraperSocial

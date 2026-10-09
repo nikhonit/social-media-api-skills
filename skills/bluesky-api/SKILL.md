@@ -1,6 +1,6 @@
 ---
 name: bluesky-api
-version: 1.0.3
+version: 1.0.4
 description: Bluesky data toolkit via ScraperSocial — public profiles, user post timelines and keyword search across the network.
 license: MIT-0
 author: ScraperSocial

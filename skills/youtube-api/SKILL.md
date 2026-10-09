@@ -1,6 +1,6 @@
 ---
 name: youtube-api
-version: 1.0.3
+version: 1.0.4
 description: YouTube data toolkit via ScraperSocial — transcripts, captions and subtitles, video and channel stats, comments and replies, Shorts, search, trending and media URLs.
 license: MIT-0
 author: ScraperSocial

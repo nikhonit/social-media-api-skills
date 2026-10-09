@@ -1,6 +1,6 @@
 ---
 name: trustpilot-api
-version: 1.0.3
+version: 1.0.4
 description: Trustpilot data toolkit via ScraperSocial — company review listings as clean JSON.
 license: MIT-0
 author: ScraperSocial
