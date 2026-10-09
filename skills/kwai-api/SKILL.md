@@ -1,6 +1,6 @@
 ---
 name: kwai-api
-version: 1.0.2
+version: 1.0.3
 description: Kwai data toolkit via ScraperSocial — creator profiles, user post listings and single video lookups.
 license: MIT-0
 author: ScraperSocial

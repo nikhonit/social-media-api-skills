@@ -1,6 +1,6 @@
 ---
 name: tiktok-shop-api
-version: 1.0.2
+version: 1.0.3
 description: TikTok Shop data toolkit via ScraperSocial — product detail, product reviews, shop catalogues, creator showcases and product search.
 license: MIT-0
 author: ScraperSocial

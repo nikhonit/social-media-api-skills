@@ -17,7 +17,7 @@
  */
 const API_BASE = 'https://api.scrapersocial.com';
 const ENV_VAR = 'SCRAPERSOCIAL_KEY';
-const VERSION = '1.0.2';
+const VERSION = '1.0.3';
 const USER_AGENT =
   `social-media-api-skills/${VERSION} (+https://github.com/nikhonit/social-media-api-skills)`;
 

@@ -1,6 +1,6 @@
 ---
 name: linkme-api
-version: 1.0.2
+version: 1.0.3
 description: Linkme data toolkit via ScraperSocial — resolve a Linkme page to the links and profile details it publishes.
 license: MIT-0
 author: ScraperSocial

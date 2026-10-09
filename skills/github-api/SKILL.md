@@ -1,6 +1,6 @@
 ---
 name: github-api
-version: 1.0.2
+version: 1.0.3
 description: GitHub data toolkit via ScraperSocial — repositories, commits, contributors, issues, releases, languages, user profiles, repo search and trending.
 license: MIT-0
 author: ScraperSocial

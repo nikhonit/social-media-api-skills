@@ -106,7 +106,7 @@ catch-all trades that for reach.
 | [twitch-api](skills/twitch-api/SKILL.md) | Twitch | 3 | Streamer profiles, clips and video listings. |
 | [twitter-api](skills/twitter-api/SKILL.md) | X (Twitter) | 7 | Transcripts, AI summaries, post stats, profiles, tweets and search. |
 | [youtube-api](skills/youtube-api/SKILL.md) | YouTube | 26 | Transcripts, captions, video and channel stats, comments, Shorts and search. |
-| [social-media-api](skills/social-media-api/SKILL.md) | All platforms | 227 | Discover and call any endpoint across every platform. |
+| [social-media-api](skills/social-media-api/SKILL.md) | All platforms | 227 | Discover and call any documented endpoint across every source, social and web. |
 <!-- /generated:skills -->
 
 ## Quickstart

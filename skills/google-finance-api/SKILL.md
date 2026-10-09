@@ -1,6 +1,6 @@
 ---
 name: google-finance-api
-version: 1.0.2
+version: 1.0.3
 description: Google Finance data toolkit via ScraperSocial — live quotes, historical price candles and instrument search.
 license: MIT-0
 author: ScraperSocial

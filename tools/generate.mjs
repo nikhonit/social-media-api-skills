@@ -591,13 +591,19 @@ for (const key of platformKeys) {
   );
 }
 
-// The catch-all skill: reaches every endpoint, including any added after this
-// repo was last generated.
+// The catch-all skill: reaches every documented endpoint in the bundled
+// catalogue except the personal-contact ones.
 if (!only) {
   const content = parseContent('social-media-api');
   const dir = `skills/${CATCH_ALL.slug}`;
   const flat = platformKeys.flatMap((key) =>
-    coverage.platforms[key].map((e) => ({ platform: key, ...e }))
+    coverage.platforms[key].map((e) => ({
+      platform: key,
+      ...e,
+      // Endpoints that return a person's contact details. The catch-all never
+      // calls these; the platform skill documents when they are appropriate.
+      personalData: /contact/.test(e.path),
+    }))
   );
 
   emit(
@@ -662,10 +668,20 @@ const { join } = require('node:path');
 const { callEndpoint, main, parseFlags, usage } = require('./_client.js');
 
 const catalog = JSON.parse(readFileSync(join(__dirname, 'endpoints.json'), 'utf8'));
-const ALLOWED = new Set(catalog.endpoints.map((e) => e.path));
+// Endpoints that return a person's contact details are never callable from
+// this generic script. They stay in the catalogue, flagged personalData: true,
+// so list_endpoints.js can say they exist and point at the platform skill.
+const ALLOWED = new Set(catalog.endpoints.filter((e) => !e.personalData).map((e) => e.path));
+const EXCLUDED = new Set(catalog.endpoints.filter((e) => e.personalData).map((e) => e.path));
 const { _, flags } = parseFlags(process.argv.slice(2));
 const path = _[0];
 
+if (path && EXCLUDED.has(path)) {
+  usage(
+    path + ' returns personal contact details and is not callable from this skill. ' +
+      'Use the platform skill, which documents when that is appropriate.'
+  );
+}
 if (!path || !ALLOWED.has(path)) {
   usage(
     'Usage: node call_endpoint.js /v1/<platform>/<capability> [--param value ...]\\n' +
@@ -676,6 +692,10 @@ if (!path || !ALLOWED.has(path)) {
 
 const params = {};
 for (const [name, value] of Object.entries(flags)) {
+  if (name === 'include_email') {
+    process.stderr.write('note: include_email is not supported by this skill and was dropped.\\n');
+    continue;
+  }
   params[name] = value === true ? 'true' : value;
 }
 
@@ -683,6 +703,7 @@ main(() => callEndpoint(path, params));
 `
   );
 
+  const personal = flat.filter((e) => e.personalData).map((e) => e.path);
   const out = [];
   out.push(
     frontmatter({
@@ -691,13 +712,13 @@ main(() => callEndpoint(path, params));
       tags: [...CATCH_ALL.tags, 'social-media'],
     })
   );
-  out.push('# Social media API skill');
+  out.push('# Social media & web data API skill');
   out.push('');
   out.push(content.sections.lede);
   out.push('');
   out.push(
-    `This skill reaches **all ${coverage.endpointCount} endpoints across ${coverage.platformCount} platforms** ` +
-      `in one place, instead of one skill per platform.`
+    `This skill reaches **${coverage.endpointCount - personal.length} of the ${coverage.endpointCount} documented endpoints across ${coverage.platformCount} sources** ` +
+      `in one place, instead of one skill per platform. The ${personal.length} endpoints that return personal contact details are listed but not callable from here.`
   );
   out.push('');
   out.push('## When to use this skill');
@@ -723,7 +744,17 @@ main(() => callEndpoint(path, params));
       REPO.apiBase +
       '` (the host is a constant in the code, not configurable), and print JSON. ' +
       'They run as `node scripts/<name>.js` with no other shell use, no file writes and no persistence. ' +
-      '`call_endpoint.js` accepts only paths present in the bundled `endpoints.json` catalogue and refuses anything else before a request is made.'
+      '`call_endpoint.js` accepts only paths present in the bundled `endpoints.json` catalogue, never the personal-contact endpoints below, and refuses anything else before a request is made.'
+  );
+  out.push('');
+  out.push('## Personal data');
+  out.push('');
+  out.push(
+    'Two catalogue entries return a named person\'s contact details: ' +
+      personal.map((p) => '`' + p + '`').join(' and ') +
+      '. This skill refuses to call them, and it drops the `include_email` parameter that some profile endpoints accept, so no request made from here returns an email address or phone number. ' +
+      'They remain visible in `list_endpoints.js` output with `personalData: true` so an agent can explain why a request was declined. ' +
+      'Anyone with a lawful basis to process a specific person\'s contact data should use the platform skill (for example `linkedin-api`), which documents the requirement and the cost. Everything else this skill returns is public data.'
   );
   out.push('');
   out.push('## Scripts');
@@ -731,7 +762,7 @@ main(() => callEndpoint(path, params));
   out.push('| Script | What it does | Credits |');
   out.push('|---|---|---|');
   out.push('| `list_endpoints.js` | List every endpoint, filterable by platform or keyword | free, no key needed |');
-  out.push('| `call_endpoint.js` | Call any endpoint by path | the endpoint\'s own cost |');
+  out.push('| `call_endpoint.js` | Call any documented endpoint by path (personal-contact endpoints excluded) | the endpoint\'s own cost |');
   out.push('');
   out.push('```bash');
   out.push(`node skills/${CATCH_ALL.slug}/scripts/list_endpoints.js --search transcript`);

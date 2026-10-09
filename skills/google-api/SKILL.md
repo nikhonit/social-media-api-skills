@@ -1,6 +1,6 @@
 ---
 name: google-api
-version: 1.0.2
+version: 1.0.3
 description: Google data toolkit via ScraperSocial — search results, Business Profile info, business reviews and updates, and company ad listings.
 license: MIT-0
 author: ScraperSocial

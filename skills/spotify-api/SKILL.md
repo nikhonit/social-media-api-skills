@@ -1,6 +1,6 @@
 ---
 name: spotify-api
-version: 1.0.2
+version: 1.0.3
 description: Spotify data toolkit via ScraperSocial — tracks, albums, artists, top tracks, playlists and catalogue search.
 license: MIT-0
 author: ScraperSocial

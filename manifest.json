@@ -1,6 +1,6 @@
 {
   "name": "social-media-api-skills",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Agent skills for reading public data from 33 platforms through the ScraperSocial API.",
   "author": "ScraperSocial",
   "homepage": "https://scrapersocial.com",
@@ -208,7 +208,7 @@
     {
       "name": "social-media-api",
       "path": "skills/social-media-api/SKILL.md",
-      "description": "One social media API skill for all 33 platforms — discover every available endpoint and call any of them by path, without installing a per-platform skill.",
+      "description": "One skill for ScraperSocial's public social media and web data API — discover every documented endpoint across 33 sources (social networks plus Amazon, Google, app stores, review sites and prediction markets) and call any of them by path. Personal-contact endpoints are excluded.",
       "endpoints": 227
     }
   ]

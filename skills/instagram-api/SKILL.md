@@ -1,6 +1,6 @@
 ---
 name: instagram-api
-version: 1.0.2
+version: 1.0.3
 description: Instagram data toolkit via ScraperSocial — reel transcripts, AI summaries, profile and post stats, comments, hashtag and location analytics, keyword search.
 license: MIT-0
 author: ScraperSocial

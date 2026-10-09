@@ -16,10 +16,20 @@ const { join } = require('node:path');
 const { callEndpoint, main, parseFlags, usage } = require('./_client.js');
 
 const catalog = JSON.parse(readFileSync(join(__dirname, 'endpoints.json'), 'utf8'));
-const ALLOWED = new Set(catalog.endpoints.map((e) => e.path));
+// Endpoints that return a person's contact details are never callable from
+// this generic script. They stay in the catalogue, flagged personalData: true,
+// so list_endpoints.js can say they exist and point at the platform skill.
+const ALLOWED = new Set(catalog.endpoints.filter((e) => !e.personalData).map((e) => e.path));
+const EXCLUDED = new Set(catalog.endpoints.filter((e) => e.personalData).map((e) => e.path));
 const { _, flags } = parseFlags(process.argv.slice(2));
 const path = _[0];
 
+if (path && EXCLUDED.has(path)) {
+  usage(
+    path + ' returns personal contact details and is not callable from this skill. ' +
+      'Use the platform skill, which documents when that is appropriate.'
+  );
+}
 if (!path || !ALLOWED.has(path)) {
   usage(
     'Usage: node call_endpoint.js /v1/<platform>/<capability> [--param value ...]\n' +
@@ -30,6 +40,10 @@ if (!path || !ALLOWED.has(path)) {
 
 const params = {};
 for (const [name, value] of Object.entries(flags)) {
+  if (name === 'include_email') {
+    process.stderr.write('note: include_email is not supported by this skill and was dropped.\n');
+    continue;
+  }
   params[name] = value === true ? 'true' : value;
 }
 

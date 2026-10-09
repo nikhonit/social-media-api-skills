@@ -1,6 +1,6 @@
 {
   "name": "social-media-api-skills",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "Agent skills for reading public data from 33 platforms — TikTok, Instagram, LinkedIn, YouTube, Reddit and more — through the ScraperSocial API. Plain Node.js, zero dependencies.",
   "homepage": "https://scrapersocial.com",

@@ -1,6 +1,6 @@
 ---
 name: twitter-api
-version: 1.0.2
+version: 1.0.3
 description: X (Twitter) data toolkit via ScraperSocial — video transcripts, AI summaries, post stats, profiles, user tweets, list tweets and keyword search.
 license: MIT-0
 author: ScraperSocial

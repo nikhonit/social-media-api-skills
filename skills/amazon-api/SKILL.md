@@ -1,6 +1,6 @@
 ---
 name: amazon-api
-version: 1.0.2
+version: 1.0.3
 description: Amazon data toolkit via ScraperSocial — product detail, product search, customer reviews and seller listings as clean JSON.
 license: MIT-0
 author: ScraperSocial

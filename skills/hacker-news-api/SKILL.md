@@ -1,6 +1,6 @@
 ---
 name: hacker-news-api
-version: 1.0.2
+version: 1.0.3
 description: Hacker News data toolkit via ScraperSocial — stories, full comment threads, user profiles and keyword search.
 license: MIT-0
 author: ScraperSocial

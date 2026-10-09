@@ -12,7 +12,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Amazon product."
+      "summary": "Get Amazon product.",
+      "personalData": false
     },
     {
       "platform": "amazon",
@@ -24,7 +25,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Amazon product search."
+      "summary": "List Amazon product search.",
+      "personalData": false
     },
     {
       "platform": "amazon",
@@ -36,7 +38,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Amazon reviews."
+      "summary": "List Amazon reviews.",
+      "personalData": false
     },
     {
       "platform": "amazon",
@@ -48,7 +51,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Amazon sellers."
+      "summary": "List Amazon sellers.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -60,7 +64,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Apple App Store app info."
+      "summary": "Get Apple App Store app info.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -72,7 +77,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Apple App Store app list."
+      "summary": "List Apple App Store app list.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -84,7 +90,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Apple App Store app reviews."
+      "summary": "List Apple App Store app reviews.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -96,7 +103,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Apple App Store app search."
+      "summary": "List Apple App Store app search.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -108,7 +116,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Apple App Store categories."
+      "summary": "List Apple App Store categories.",
+      "personalData": false
     },
     {
       "platform": "app_store",
@@ -120,7 +129,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Apple App Store locations."
+      "summary": "Get Apple App Store locations.",
+      "personalData": false
     },
     {
       "platform": "bluesky",
@@ -132,7 +142,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Bluesky profile."
+      "summary": "Get Bluesky profile.",
+      "personalData": false
     },
     {
       "platform": "bluesky",
@@ -144,7 +155,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Bluesky search."
+      "summary": "List Bluesky search.",
+      "personalData": false
     },
     {
       "platform": "bluesky",
@@ -156,7 +168,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Bluesky user posts."
+      "summary": "List Bluesky user posts.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -168,7 +181,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Facebook ad."
+      "summary": "Get Facebook ad.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -180,7 +194,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook ads search."
+      "summary": "List Facebook ads search.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -192,7 +207,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest posts from a Facebook page with per-post metrics."
+      "summary": "Latest posts from a Facebook page with per-post metrics.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -204,7 +220,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook comment replies."
+      "summary": "List Facebook comment replies.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -216,7 +233,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Paginated comments on a Facebook post; charged per comment returned."
+      "summary": "Paginated comments on a Facebook post; charged per comment returned.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -228,7 +246,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Resolves a downloadable media URL for a Facebook video (URL expires within 1h)."
+      "summary": "Resolves a downloadable media URL for a Facebook video (URL expires within 1h).",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -240,7 +259,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Facebook event."
+      "summary": "Get Facebook event.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -252,7 +272,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook events search."
+      "summary": "List Facebook events search.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -264,7 +285,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook followers."
+      "summary": "List Facebook followers.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -276,7 +298,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook following."
+      "summary": "List Facebook following.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -288,7 +311,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook group posts."
+      "summary": "List Facebook group posts.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -300,7 +324,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Facebook marketplace item."
+      "summary": "Get Facebook marketplace item.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -312,7 +337,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook marketplace search."
+      "summary": "List Facebook marketplace search.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -324,7 +350,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook page ads."
+      "summary": "List Facebook page ads.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -336,7 +363,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook page events."
+      "summary": "List Facebook page events.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -348,7 +376,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook page search."
+      "summary": "List Facebook page search.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -360,7 +389,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Followers, likes and metadata for a Facebook page."
+      "summary": "Followers, likes and metadata for a Facebook page.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -372,7 +402,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook photos."
+      "summary": "List Facebook photos.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -384,7 +415,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook reels."
+      "summary": "List Facebook reels.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -396,7 +428,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Facebook reviews."
+      "summary": "List Facebook reviews.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -408,7 +441,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Reactions, comments and shares for a Facebook post or video."
+      "summary": "Reactions, comments and shares for a Facebook post or video.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -420,7 +454,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Short AI summary of a Facebook video, built on its transcript."
+      "summary": "Short AI summary of a Facebook video, built on its transcript.",
+      "personalData": false
     },
     {
       "platform": "facebook",
@@ -432,7 +467,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Full transcript of a Facebook video with timestamped segments."
+      "summary": "Full transcript of a Facebook video with timestamped segments.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -444,7 +480,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub org repos."
+      "summary": "List GitHub org repos.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -456,7 +493,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get GitHub profile."
+      "summary": "Get GitHub profile.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -468,7 +506,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get GitHub repo."
+      "summary": "Get GitHub repo.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -480,7 +519,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo commits."
+      "summary": "List GitHub repo commits.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -492,7 +532,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo contributors."
+      "summary": "List GitHub repo contributors.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -504,7 +545,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo issues."
+      "summary": "List GitHub repo issues.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -516,7 +558,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo languages."
+      "summary": "List GitHub repo languages.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -528,7 +571,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo releases."
+      "summary": "List GitHub repo releases.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -540,7 +584,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub repo search."
+      "summary": "List GitHub repo search.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -552,7 +597,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub trending."
+      "summary": "List GitHub trending.",
+      "personalData": false
     },
     {
       "platform": "github",
@@ -564,7 +610,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List GitHub user repos."
+      "summary": "List GitHub user repos.",
+      "personalData": false
     },
     {
       "platform": "google",
@@ -576,7 +623,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Search business info."
+      "summary": "Get Google Search business info.",
+      "personalData": false
     },
     {
       "platform": "google",
@@ -588,7 +636,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Search business reviews."
+      "summary": "List Google Search business reviews.",
+      "personalData": false
     },
     {
       "platform": "google",
@@ -600,7 +649,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Search business updates."
+      "summary": "List Google Search business updates.",
+      "personalData": false
     },
     {
       "platform": "google",
@@ -612,7 +662,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Search company ads."
+      "summary": "List Google Search company ads.",
+      "personalData": false
     },
     {
       "platform": "google",
@@ -624,7 +675,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Search search."
+      "summary": "List Google Search search.",
+      "personalData": false
     },
     {
       "platform": "google_finance",
@@ -636,7 +688,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Finance history."
+      "summary": "List Google Finance history.",
+      "personalData": false
     },
     {
       "platform": "google_finance",
@@ -648,7 +701,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Finance quote."
+      "summary": "Get Google Finance quote.",
+      "personalData": false
     },
     {
       "platform": "google_finance",
@@ -660,7 +714,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Finance search."
+      "summary": "List Google Finance search.",
+      "personalData": false
     },
     {
       "platform": "google_maps",
@@ -672,7 +727,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Maps contacts."
+      "summary": "List Google Maps contacts.",
+      "personalData": true
     },
     {
       "platform": "google_maps",
@@ -684,7 +740,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Maps photos."
+      "summary": "List Google Maps photos.",
+      "personalData": false
     },
     {
       "platform": "google_maps",
@@ -696,7 +753,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Maps place."
+      "summary": "Get Google Maps place.",
+      "personalData": false
     },
     {
       "platform": "google_maps",
@@ -708,7 +766,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Maps search."
+      "summary": "List Google Maps search.",
+      "personalData": false
     },
     {
       "platform": "google_news",
@@ -720,7 +779,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google News search."
+      "summary": "List Google News search.",
+      "personalData": false
     },
     {
       "platform": "google_play",
@@ -732,7 +792,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Play app info."
+      "summary": "Get Google Play app info.",
+      "personalData": false
     },
     {
       "platform": "google_play",
@@ -744,7 +805,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Play app reviews."
+      "summary": "List Google Play app reviews.",
+      "personalData": false
     },
     {
       "platform": "google_play",
@@ -756,7 +818,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Play app search."
+      "summary": "List Google Play app search.",
+      "personalData": false
     },
     {
       "platform": "google_play",
@@ -768,7 +831,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Play categories."
+      "summary": "Get Google Play categories.",
+      "personalData": false
     },
     {
       "platform": "google_shopping",
@@ -780,7 +844,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Shopping product search."
+      "summary": "List Google Shopping product search.",
+      "personalData": false
     },
     {
       "platform": "google_trends",
@@ -792,7 +857,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Google Trends explore."
+      "summary": "Get Google Trends explore.",
+      "personalData": false
     },
     {
       "platform": "google_trends",
@@ -804,7 +870,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Google Trends rising."
+      "summary": "List Google Trends rising.",
+      "personalData": false
     },
     {
       "platform": "hackernews",
@@ -816,7 +883,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Hacker News profile."
+      "summary": "Get Hacker News profile.",
+      "personalData": false
     },
     {
       "platform": "hackernews",
@@ -828,7 +896,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Hacker News search."
+      "summary": "List Hacker News search.",
+      "personalData": false
     },
     {
       "platform": "hackernews",
@@ -840,7 +909,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Hacker News story."
+      "summary": "Get Hacker News story.",
+      "personalData": false
     },
     {
       "platform": "hackernews",
@@ -852,7 +922,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Hacker News story comments."
+      "summary": "List Hacker News story comments.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -864,7 +935,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest posts from an Instagram account with per-post metrics."
+      "summary": "Latest posts from an Instagram account with per-post metrics.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -876,7 +948,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest reels from an Instagram account with per-reel metrics."
+      "summary": "Latest reels from an Instagram account with per-reel metrics.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -888,7 +961,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Follower counts, bio and profile metadata for an Instagram account."
+      "summary": "Follower counts, bio and profile metadata for an Instagram account.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -900,7 +974,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Paginated comments on an Instagram post; charged per comment returned."
+      "summary": "Paginated comments on an Instagram post; charged per comment returned.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -912,7 +987,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Resolves a downloadable media URL for an Instagram reel (URL expires within 1h)."
+      "summary": "Resolves a downloadable media URL for an Instagram reel (URL expires within 1h).",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -924,7 +1000,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram hashtag analytics."
+      "summary": "Get Instagram hashtag analytics.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -936,7 +1013,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram hashtag posts."
+      "summary": "List Instagram hashtag posts.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -948,7 +1026,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram hashtag reels."
+      "summary": "List Instagram hashtag reels.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -960,7 +1039,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram hashtag search."
+      "summary": "List Instagram hashtag search.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -972,7 +1052,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram hashtag stats."
+      "summary": "Get Instagram hashtag stats.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -984,7 +1065,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram keyword search."
+      "summary": "List Instagram keyword search.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -996,7 +1078,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram location posts."
+      "summary": "List Instagram location posts.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1008,7 +1091,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram location search."
+      "summary": "List Instagram location search.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1020,7 +1104,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram location stats."
+      "summary": "Get Instagram location stats.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1032,7 +1117,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram profile about."
+      "summary": "Get Instagram profile about.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1044,7 +1130,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram profile full."
+      "summary": "Get Instagram profile full.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1056,7 +1143,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram profile search."
+      "summary": "List Instagram profile search.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1068,7 +1156,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Keyword search over Instagram reels."
+      "summary": "Keyword search over Instagram reels.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1080,7 +1169,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Instagram similar."
+      "summary": "Get Instagram similar.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1092,7 +1182,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Likes, comments and view counts for an Instagram post or reel."
+      "summary": "Likes, comments and view counts for an Instagram post or reel.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1104,7 +1195,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Short AI summary of an Instagram reel, built on its transcript."
+      "summary": "Short AI summary of an Instagram reel, built on its transcript.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1116,7 +1208,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Instagram tagged."
+      "summary": "List Instagram tagged.",
+      "personalData": false
     },
     {
       "platform": "instagram",
@@ -1128,7 +1221,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Full transcript of an Instagram reel with timestamped segments."
+      "summary": "Full transcript of an Instagram reel with timestamped segments.",
+      "personalData": false
     },
     {
       "platform": "kwai",
@@ -1140,7 +1234,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Kwai post."
+      "summary": "Get Kwai post.",
+      "personalData": false
     },
     {
       "platform": "kwai",
@@ -1152,7 +1247,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Kwai profile."
+      "summary": "Get Kwai profile.",
+      "personalData": false
     },
     {
       "platform": "kwai",
@@ -1164,7 +1260,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Kwai user posts."
+      "summary": "List Kwai user posts.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1176,7 +1273,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn ads search."
+      "summary": "List LinkedIn ads search.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1188,7 +1286,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Paginated comments on a LinkedIn post; charged per comment returned."
+      "summary": "Paginated comments on a LinkedIn post; charged per comment returned.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1200,7 +1299,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Company page data: industry, size, followers and description."
+      "summary": "Company page data: industry, size, followers and description.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1212,7 +1312,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn company funding."
+      "summary": "Get LinkedIn company funding.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1224,7 +1325,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn company insights."
+      "summary": "Get LinkedIn company insights.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1236,7 +1338,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn company jobs."
+      "summary": "List LinkedIn company jobs.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1248,7 +1351,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn company people."
+      "summary": "List LinkedIn company people.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1260,7 +1364,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest posts from a LinkedIn company page with per-post metrics."
+      "summary": "Latest posts from a LinkedIn company page with per-post metrics.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1272,7 +1377,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn company search."
+      "summary": "List LinkedIn company search.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1284,7 +1390,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn job search."
+      "summary": "List LinkedIn job search.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1296,7 +1403,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Search public LinkedIn profiles by keyword, title, company or location."
+      "summary": "Search public LinkedIn profiles by keyword, title, company or location.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1308,7 +1416,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn people search by name."
+      "summary": "List LinkedIn people search by name.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1320,7 +1429,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn people search by services."
+      "summary": "List LinkedIn people search by services.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1332,7 +1442,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn post comment replies."
+      "summary": "List LinkedIn post comment replies.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1344,7 +1455,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn post reactions."
+      "summary": "List LinkedIn post reactions.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1356,7 +1468,8 @@
       "creditNote": "25 with include_email=true",
       "list": false,
       "supportsIncludeEmail": true,
-      "summary": "Public profile data for a LinkedIn member: headline, positions, education."
+      "summary": "Public profile data for a LinkedIn member: headline, positions, education.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1368,7 +1481,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile about."
+      "summary": "Get LinkedIn profile about.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1380,7 +1494,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile certifications."
+      "summary": "Get LinkedIn profile certifications.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1392,7 +1507,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn profile comments."
+      "summary": "List LinkedIn profile comments.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1404,7 +1520,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile contact."
+      "summary": "Get LinkedIn profile contact.",
+      "personalData": true
     },
     {
       "platform": "linkedin",
@@ -1416,7 +1533,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile courses."
+      "summary": "Get LinkedIn profile courses.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1428,7 +1546,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile educations."
+      "summary": "Get LinkedIn profile educations.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1440,7 +1559,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile experiences."
+      "summary": "Get LinkedIn profile experiences.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1452,7 +1572,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile full."
+      "summary": "Get LinkedIn profile full.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1464,7 +1585,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile honors."
+      "summary": "Get LinkedIn profile honors.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1476,7 +1598,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile languages."
+      "summary": "Get LinkedIn profile languages.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1488,7 +1611,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile patents."
+      "summary": "Get LinkedIn profile patents.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1500,7 +1624,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn profile posts."
+      "summary": "List LinkedIn profile posts.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1512,7 +1637,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile projects."
+      "summary": "Get LinkedIn profile projects.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1524,7 +1650,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile publications."
+      "summary": "Get LinkedIn profile publications.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1536,7 +1663,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List LinkedIn profile reactions."
+      "summary": "List LinkedIn profile reactions.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1548,7 +1676,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile recommendations."
+      "summary": "Get LinkedIn profile recommendations.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1560,7 +1689,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile similar."
+      "summary": "Get LinkedIn profile similar.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1572,7 +1702,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile skills."
+      "summary": "Get LinkedIn profile skills.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1584,7 +1715,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile stats."
+      "summary": "Get LinkedIn profile stats.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1596,7 +1728,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkedIn profile volunteers."
+      "summary": "Get LinkedIn profile volunteers.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1608,7 +1741,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Keyword search over public LinkedIn posts."
+      "summary": "Keyword search over public LinkedIn posts.",
+      "personalData": false
     },
     {
       "platform": "linkedin",
@@ -1620,7 +1754,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Reactions, comments and reposts for a LinkedIn post."
+      "summary": "Reactions, comments and reposts for a LinkedIn post.",
+      "personalData": false
     },
     {
       "platform": "linkme",
@@ -1632,7 +1767,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get LinkMe page."
+      "summary": "Get LinkMe page.",
+      "personalData": false
     },
     {
       "platform": "linktree",
@@ -1644,7 +1780,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Linktree page."
+      "summary": "Get Linktree page.",
+      "personalData": false
     },
     {
       "platform": "naver",
@@ -1656,7 +1793,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Naver blog search."
+      "summary": "List Naver blog search.",
+      "personalData": false
     },
     {
       "platform": "naver",
@@ -1668,7 +1806,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Naver cafearticle search."
+      "summary": "List Naver cafearticle search.",
+      "personalData": false
     },
     {
       "platform": "naver",
@@ -1680,7 +1819,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Naver local search."
+      "summary": "List Naver local search.",
+      "personalData": false
     },
     {
       "platform": "naver",
@@ -1692,7 +1832,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Naver shop search."
+      "summary": "List Naver shop search.",
+      "personalData": false
     },
     {
       "platform": "pinterest",
@@ -1704,7 +1845,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Pinterest pin."
+      "summary": "Get Pinterest pin.",
+      "personalData": false
     },
     {
       "platform": "pinterest",
@@ -1716,7 +1858,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Pinterest search."
+      "summary": "List Pinterest search.",
+      "personalData": false
     },
     {
       "platform": "pinterest",
@@ -1728,7 +1871,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Pinterest url stats."
+      "summary": "Get Pinterest url stats.",
+      "personalData": false
     },
     {
       "platform": "polymarket",
@@ -1740,7 +1884,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Polymarket markets."
+      "summary": "List Polymarket markets.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1752,7 +1897,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Reddit post."
+      "summary": "Get Reddit post.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1764,7 +1910,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Reddit post comments."
+      "summary": "List Reddit post comments.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1776,7 +1923,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Reddit search."
+      "summary": "List Reddit search.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1788,7 +1936,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Reddit subreddit."
+      "summary": "List Reddit subreddit.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1800,7 +1949,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Reddit subreddit details."
+      "summary": "Get Reddit subreddit details.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1812,7 +1962,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Reddit subreddit search."
+      "summary": "List Reddit subreddit search.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1824,7 +1975,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Reddit user."
+      "summary": "Get Reddit user.",
+      "personalData": false
     },
     {
       "platform": "reddit",
@@ -1836,7 +1988,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Reddit user posts."
+      "summary": "List Reddit user posts.",
+      "personalData": false
     },
     {
       "platform": "snapchat",
@@ -1848,7 +2001,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Snapchat profile."
+      "summary": "Get Snapchat profile.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1860,7 +2014,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Spotify album."
+      "summary": "Get Spotify album.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1872,7 +2027,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Spotify artist."
+      "summary": "Get Spotify artist.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1884,7 +2040,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Spotify artist top tracks."
+      "summary": "List Spotify artist top tracks.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1896,7 +2053,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Spotify playlist."
+      "summary": "Get Spotify playlist.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1908,7 +2066,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Spotify search."
+      "summary": "List Spotify search.",
+      "personalData": false
     },
     {
       "platform": "spotify",
@@ -1920,7 +2079,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Spotify track."
+      "summary": "Get Spotify track.",
+      "personalData": false
     },
     {
       "platform": "threads",
@@ -1932,7 +2092,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Recent public posts from a Threads account, newest first."
+      "summary": "Recent public posts from a Threads account, newest first.",
+      "personalData": false
     },
     {
       "platform": "threads",
@@ -1944,7 +2105,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Public profile for a Threads account: follower count, bio, verification status, and profile link."
+      "summary": "Public profile for a Threads account: follower count, bio, verification status, and profile link.",
+      "personalData": false
     },
     {
       "platform": "threads",
@@ -1956,7 +2118,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Public Threads posts matching a keyword or hashtag."
+      "summary": "Public Threads posts matching a keyword or hashtag.",
+      "personalData": false
     },
     {
       "platform": "threads",
@@ -1968,7 +2131,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Engagement stats and text for a single Threads post: likes, replies, reposts, quotes, media, and author."
+      "summary": "Engagement stats and text for a single Threads post: likes, replies, reposts, quotes, media, and author.",
+      "personalData": false
     },
     {
       "platform": "threads",
@@ -1980,7 +2144,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Threads user search."
+      "summary": "List Threads user search.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -1992,7 +2157,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok channel reposts."
+      "summary": "List TikTok channel reposts.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2004,7 +2170,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Follower counts and profile metadata for a TikTok account."
+      "summary": "Follower counts and profile metadata for a TikTok account.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2016,7 +2183,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok channel top videos."
+      "summary": "List TikTok channel top videos.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2028,7 +2196,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest videos from a TikTok account with per-video metrics."
+      "summary": "Latest videos from a TikTok account with per-video metrics.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2040,7 +2209,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Paginated comments on a TikTok video; charged per comment returned."
+      "summary": "Paginated comments on a TikTok video; charged per comment returned.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2052,7 +2222,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok followers."
+      "summary": "List TikTok followers.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2064,7 +2235,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok following."
+      "summary": "List TikTok following.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2076,7 +2248,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Videos posted under a TikTok hashtag."
+      "summary": "Videos posted under a TikTok hashtag.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2088,7 +2261,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Keyword search over TikTok videos."
+      "summary": "Keyword search over TikTok videos.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2100,7 +2274,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get TikTok song."
+      "summary": "Get TikTok song.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2112,7 +2287,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok song videos."
+      "summary": "List TikTok song videos.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2124,7 +2300,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Views, likes, comments and shares for a single TikTok video."
+      "summary": "Views, likes, comments and shares for a single TikTok video.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2136,7 +2313,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Short AI summary of a TikTok video, built on its transcript."
+      "summary": "Short AI summary of a TikTok video, built on its transcript.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2148,7 +2326,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok top search."
+      "summary": "List TikTok top search.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2160,7 +2339,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Full transcript of a TikTok video with timestamped segments."
+      "summary": "Full transcript of a TikTok video with timestamped segments.",
+      "personalData": false
     },
     {
       "platform": "tiktok",
@@ -2172,7 +2352,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok user search."
+      "summary": "List TikTok user search.",
+      "personalData": false
     },
     {
       "platform": "tiktokshop",
@@ -2184,7 +2365,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get TikTok Shop product."
+      "summary": "Get TikTok Shop product.",
+      "personalData": false
     },
     {
       "platform": "tiktokshop",
@@ -2196,7 +2378,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok Shop product reviews."
+      "summary": "List TikTok Shop product reviews.",
+      "personalData": false
     },
     {
       "platform": "tiktokshop",
@@ -2208,7 +2391,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok Shop products."
+      "summary": "List TikTok Shop products.",
+      "personalData": false
     },
     {
       "platform": "tiktokshop",
@@ -2220,7 +2404,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok Shop search."
+      "summary": "List TikTok Shop search.",
+      "personalData": false
     },
     {
       "platform": "tiktokshop",
@@ -2232,7 +2417,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List TikTok Shop user showcase."
+      "summary": "List TikTok Shop user showcase.",
+      "personalData": false
     },
     {
       "platform": "tripadvisor",
@@ -2244,7 +2430,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Tripadvisor reviews."
+      "summary": "List Tripadvisor reviews.",
+      "personalData": false
     },
     {
       "platform": "tripadvisor",
@@ -2256,7 +2443,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Tripadvisor search."
+      "summary": "List Tripadvisor search.",
+      "personalData": false
     },
     {
       "platform": "trustpilot",
@@ -2268,7 +2456,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Trustpilot reviews."
+      "summary": "List Trustpilot reviews.",
+      "personalData": false
     },
     {
       "platform": "truthsocial",
@@ -2280,7 +2469,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Truth Social profile."
+      "summary": "Get Truth Social profile.",
+      "personalData": false
     },
     {
       "platform": "truthsocial",
@@ -2292,7 +2482,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Truth Social user posts."
+      "summary": "List Truth Social user posts.",
+      "personalData": false
     },
     {
       "platform": "twitch",
@@ -2304,7 +2495,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Twitch clip."
+      "summary": "Get Twitch clip.",
+      "personalData": false
     },
     {
       "platform": "twitch",
@@ -2316,7 +2508,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get Twitch profile."
+      "summary": "Get Twitch profile.",
+      "personalData": false
     },
     {
       "platform": "twitch",
@@ -2328,7 +2521,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List Twitch user videos."
+      "summary": "List Twitch user videos.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2340,7 +2534,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List X/Twitter list tweets."
+      "summary": "List X/Twitter list tweets.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2352,7 +2547,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Follower counts, bio and profile metadata for an account on X."
+      "summary": "Follower counts, bio and profile metadata for an account on X.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2364,7 +2560,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Keyword and advanced-search over public posts on X."
+      "summary": "Keyword and advanced-search over public posts on X.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2376,7 +2573,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Views, likes, reposts and replies for a single post on X."
+      "summary": "Views, likes, reposts and replies for a single post on X.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2388,7 +2586,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Short AI summary of a video posted on X, built on its transcript."
+      "summary": "Short AI summary of a video posted on X, built on its transcript.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2400,7 +2599,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Full transcript of a video attached to a post on X."
+      "summary": "Full transcript of a video attached to a post on X.",
+      "personalData": false
     },
     {
       "platform": "twitter",
@@ -2412,7 +2612,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "Latest posts from an account on X with per-post metrics."
+      "summary": "Latest posts from an account on X with per-post metrics.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2424,7 +2625,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube captions."
+      "summary": "Get YouTube captions.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2436,7 +2638,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube channel lives."
+      "summary": "List YouTube channel lives.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2448,7 +2651,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube channel search."
+      "summary": "List YouTube channel search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2460,7 +2664,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube channel shorts."
+      "summary": "List YouTube channel shorts.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2472,7 +2677,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube channel stats."
+      "summary": "Get YouTube channel stats.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2484,7 +2690,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube channel top videos."
+      "summary": "List YouTube channel top videos.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2496,7 +2703,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube channel videos."
+      "summary": "List YouTube channel videos.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2508,7 +2716,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube comment replies."
+      "summary": "List YouTube comment replies.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2520,7 +2729,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube comments."
+      "summary": "List YouTube comments.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2532,7 +2742,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube comments top."
+      "summary": "List YouTube comments top.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2544,7 +2755,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube hashtag search."
+      "summary": "List YouTube hashtag search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2556,7 +2768,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube playlist items."
+      "summary": "List YouTube playlist items.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2568,7 +2781,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube search."
+      "summary": "List YouTube search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2580,7 +2794,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube search recent."
+      "summary": "List YouTube search recent.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2592,7 +2807,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube search suggestions."
+      "summary": "List YouTube search suggestions.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2604,7 +2820,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube shorts hashtag search."
+      "summary": "List YouTube shorts hashtag search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2616,7 +2833,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube shorts search."
+      "summary": "List YouTube shorts search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2628,7 +2846,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube shorts trending."
+      "summary": "List YouTube shorts trending.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2640,7 +2859,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube stats."
+      "summary": "Get YouTube stats.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2652,7 +2872,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube streams search."
+      "summary": "List YouTube streams search.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2664,7 +2885,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube subtitles."
+      "summary": "Get YouTube subtitles.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2676,7 +2898,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube thumbnails."
+      "summary": "Get YouTube thumbnails.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2688,7 +2911,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube transcript."
+      "summary": "Get YouTube transcript.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2700,7 +2924,8 @@
       "creditNote": null,
       "list": true,
       "supportsIncludeEmail": false,
-      "summary": "List YouTube trending."
+      "summary": "List YouTube trending.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2712,7 +2937,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube video audio."
+      "summary": "Get YouTube video audio.",
+      "personalData": false
     },
     {
       "platform": "youtube",
@@ -2724,7 +2950,8 @@
       "creditNote": null,
       "list": false,
       "supportsIncludeEmail": false,
-      "summary": "Get YouTube video files."
+      "summary": "Get YouTube video files.",
+      "personalData": false
     }
   ]
 }

@@ -1,6 +1,6 @@
 ---
 name: google-shopping-api
-version: 1.0.2
+version: 1.0.3
 description: Google Shopping data toolkit via ScraperSocial — product search across merchants with pricing as clean JSON.
 license: MIT-0
 author: ScraperSocial

@@ -1,6 +1,6 @@
 ---
 name: truth-social-api
-version: 1.0.2
+version: 1.0.3
 description: Truth Social data toolkit via ScraperSocial — public profiles and user post timelines as clean JSON.
 license: MIT-0
 author: ScraperSocial

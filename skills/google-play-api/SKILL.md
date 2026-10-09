@@ -1,6 +1,6 @@
 ---
 name: google-play-api
-version: 1.0.2
+version: 1.0.3
 description: Google Play data toolkit via ScraperSocial — Android app metadata, user reviews, keyword search and store categories.
 license: MIT-0
 author: ScraperSocial

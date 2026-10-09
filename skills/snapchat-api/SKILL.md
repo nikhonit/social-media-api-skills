@@ -1,6 +1,6 @@
 ---
 name: snapchat-api
-version: 1.0.2
+version: 1.0.3
 description: Snapchat data toolkit via ScraperSocial — public creator profile lookups as clean JSON.
 license: MIT-0
 author: ScraperSocial
