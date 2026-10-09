@@ -9,9 +9,28 @@
  * Zero dependencies. Node 20+ (uses built-in fetch).
  */
 
-const API_BASE = process.env.SCRAPERSOCIAL_API_BASE || 'https://api.scrapersocial.com';
+/**
+ * The API key is only ever sent to this host. The one exception is the test
+ * suite, which points scripts at a mock server on the local machine; an
+ * override that names any non-loopback host is ignored, so no environment
+ * variable can redirect the key elsewhere.
+ */
+const PRODUCTION_BASE = 'https://api.scrapersocial.com';
+const LOOPBACK_HOSTS = new Set(['127.0.0.1', 'localhost', '[::1]']);
+function resolveApiBase() {
+  const override = process.env.SCRAPERSOCIAL_API_BASE;
+  if (!override) return PRODUCTION_BASE;
+  try {
+    const parsed = new URL(override);
+    if (LOOPBACK_HOSTS.has(parsed.hostname)) return override.replace(/\/+$/, '');
+  } catch {
+    /* fall through to production */
+  }
+  return PRODUCTION_BASE;
+}
+const API_BASE = resolveApiBase();
 const ENV_VAR = 'SCRAPERSOCIAL_KEY';
-const VERSION = '1.0.0';
+const VERSION = '1.0.1';
 const USER_AGENT =
   `social-media-api-skills/${VERSION} (+https://github.com/nikhonit/social-media-api-skills)`;
 
