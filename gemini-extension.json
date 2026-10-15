@@ -1,0 +1,15 @@
+{
+  "name": "scrapersocial",
+  "version": "1.0.4",
+  "description": "Public social media and web data for Gemini CLI via the ScraperSocial MCP server: profiles, posts, comments, search and transcripts from TikTok, Instagram, LinkedIn, X, Reddit, Threads and 25 more platforms. Set SCRAPERSOCIAL_KEY (100 free credits at https://scrapersocial.com/signup?utm_source=gemini-cli).",
+  "mcpServers": {
+    "scrapersocial": {
+      "httpUrl": "https://mcp.scrapersocial.com",
+      "headers": {
+        "Authorization": "Bearer ${SCRAPERSOCIAL_KEY}"
+      },
+      "timeout": 60000
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
