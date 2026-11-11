@@ -3,7 +3,7 @@
 This repository contains agent skills that read public social media data through the ScraperSocial API. Follow these steps exactly.
 
 ## 1. Get an API key
-Open https://scrapersocial.com/signup?utm_source=llms-install and create an account. New accounts receive 100 free credits, no card. Create a key on https://scrapersocial.com/app/keys. Keys start with `sk_live_`.
+Open https://scrapersocial.com/signup?utm_source=llms-install and create an account. New accounts receive 25 free credits, no card. Create a key on https://scrapersocial.com/app/keys. Keys start with `sk_live_`.
 
 ## 2. Make the key available
 Set the environment variable `SCRAPERSOCIAL_KEY` to the key value. Every script in this repository reads that variable. Never write the key into a file that is committed.

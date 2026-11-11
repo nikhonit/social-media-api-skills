@@ -1,12 +1,12 @@
 # social-media-api-skills: social media API skills for AI agents
 
-A social media API toolkit for AI agents. These skills let Claude, ChatGPT, Cursor, or any custom agent loop read public data from 33 platforms — the TikTok API for video transcripts, the Instagram API for reels and hashtags, the LinkedIn API for profiles and company data, the YouTube API for transcripts and comments, plus Reddit, X, Facebook, Amazon, Google and more — through one key and one JSON envelope. There is also a hosted MCP server if you would rather install nothing at all.
+A social media API toolkit for AI agents. These skills let Claude, ChatGPT, Cursor, or any custom agent loop read public data from 32 platforms — the TikTok API for video transcripts, the Instagram API for reels and hashtags, the LinkedIn API for profiles and company data, the YouTube API for transcripts and comments, plus Reddit, X, Facebook, Amazon, Google and more — through one key and one JSON envelope. There is also a hosted MCP server if you would rather install nothing at all.
 
 <!-- generated:counts -->
-227 endpoints across 33 platforms
+231 endpoints across 32 platforms
 <!-- /generated:counts -->
 
-Free to start: signing up gives you 100 credits, no card required. Plain Node.js. No dependencies. MIT-0 licensed.
+Free to start: signing up gives you 25 credits, no card required. Plain Node.js. No dependencies. MIT-0 licensed.
 
 [![License: MIT-0](https://img.shields.io/badge/license-MIT--0-blue.svg)](LICENSE)
 [![Node](https://img.shields.io/badge/node-%3E%3D20-brightgreen.svg)](https://nodejs.org)
@@ -14,7 +14,7 @@ Free to start: signing up gives you 100 credits, no card required. Plain Node.js
 
 ## Install
 
-Most people want the catch-all skill — one skill that reaches all 33 platforms:
+Most people want the catch-all skill — one skill that reaches all 32 platforms:
 
 ```bash
 # OpenClaw (via ClawHub)
@@ -106,13 +106,13 @@ catch-all trades that for reach.
 | [twitch-api](skills/twitch-api/SKILL.md) | Twitch | 3 | Streamer profiles, clips and video listings. |
 | [twitter-api](skills/twitter-api/SKILL.md) | X (Twitter) | 7 | Transcripts, AI summaries, post stats, profiles, tweets and search. |
 | [youtube-api](skills/youtube-api/SKILL.md) | YouTube | 26 | Transcripts, captions, video and channel stats, comments, Shorts and search. |
-| [social-media-api](skills/social-media-api/SKILL.md) | All platforms | 227 | Discover and call any documented endpoint across every source, social and web. |
+| [social-media-api](skills/social-media-api/SKILL.md) | All platforms | 231 | Discover and call any documented endpoint across every source, social and web. |
 <!-- /generated:skills -->
 
 ## Quickstart
 
 ```bash
-# 1. Get a key — 100 free credits, no card
+# 1. Get a key — 25 free credits, no card
 open https://scrapersocial.com/signup
 
 # 2. Export it
@@ -222,9 +222,9 @@ Manage keys at [scrapersocial.com/app/keys](https://scrapersocial.com/app/keys).
 
 | Plan | Price | Credits | Rate limit |
 |---|---|---|---|
-| Free | $0 | 100 one-time at signup, no card | 20/min |
-| Monthly | $5/mo | 1,000/month, top-ups $4/1k | 200/min |
-| Annual | $54/yr | 12,000 upfront, top-ups $3/1k | 300/min |
+| Free | $0 | 25 one-time at signup, no card | 20/min |
+| Monthly | $5/mo | 1,000/month, top-ups $5/1k | 200/min |
+| Annual | $54/yr | 12,000 upfront, top-ups $4.50/1k | 300/min |
 | Enterprise | custom | custom | 1,500/min |
 
 Credits are charged **per item returned** on paginated endpoints and **per call** otherwise. Costs range from 1 credit (GitHub, Hacker News, Bluesky, Linktree) to 42 (Instagram AI summary). Each skill's `SKILL.md` lists the exact cost of every endpoint it wraps. Cache hits cost the same as fresh calls and return in milliseconds. Failed calls are not charged.
@@ -237,7 +237,7 @@ Install `tiktok-api`, export `SCRAPERSOCIAL_KEY`, and run `node skills/tiktok-ap
 
 ### Is there a free social media API?
 
-This one starts free: 100 credits at signup with no card. That covers roughly 100 GitHub or Hacker News calls, or a dozen TikTok transcripts. After that, plans start at $5/month for 1,000 credits.
+This one starts free: 25 credits at signup with no card. After that, plans start at $5/month for 1,000 credits.
 
 ### How do I give Claude access to LinkedIn data?
 
@@ -245,7 +245,7 @@ Two ways. Install the `linkedin-api` skill from this repo, or add the hosted MCP
 
 ### What is an MCP server for social media?
 
-An MCP server exposes tools an AI agent can call directly, without you writing glue code. ScraperSocial's is at `https://mcp.scrapersocial.com` and exposes 14 tools covering all 33 platforms. Add it once and the agent can read social data on its own.
+An MCP server exposes tools an AI agent can call directly, without you writing glue code. ScraperSocial's is at `https://mcp.scrapersocial.com` and exposes 14 tools covering all 32 platforms. Add it once and the agent can read social data on its own.
 
 ### Can I transcribe an Instagram reel with an API?
 
